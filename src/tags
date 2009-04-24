@@ -1,0 +1,919 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+ACCOUNT_LEN	qqdef.h	44;"	d
+ALIAS_LEN	qqdef.h	48;"	d
+ARCH_IS_BIG_ENDIAN	md5.c	174;"	d	file:
+AUTO_REPLY_LEN	qqdef.h	47;"	d
+BUDDY_BUF_SIZE	myqq.c	52;"	d	file:
+CC	Makefile	/^CC=		gcc$/;"	m
+CC	linux.mak	/^CC=		gcc$/;"	m
+CC	linux.webqq.mak	/^CC=		gcc$/;"	m
+CC	release.mak	/^CC=		gcc$/;"	m
+CC	webqq.mak	/^CC=		gcc$/;"	m
+CC	webqq.release.mak	/^CC=		gcc$/;"	m
+CCOL_BLACK	myqq.c	140;"	d	file:
+CCOL_BLUE	myqq.c	142;"	d	file:
+CCOL_CYAN	myqq.c	146;"	d	file:
+CCOL_DARKGRAY	myqq.c	141;"	d	file:
+CCOL_GREEN	myqq.c	124;"	d	file:
+CCOL_GREEN	myqq.c	144;"	d	file:
+CCOL_LIGHTBLUE	myqq.c	125;"	d	file:
+CCOL_LIGHTBLUE	myqq.c	143;"	d	file:
+CCOL_LIGHTBROWN	myqq.c	152;"	d	file:
+CCOL_LIGHTCYAN	myqq.c	147;"	d	file:
+CCOL_LIGHTGRAY	myqq.c	154;"	d	file:
+CCOL_LIGHTGREEN	myqq.c	145;"	d	file:
+CCOL_LIGHTPURPLE	myqq.c	151;"	d	file:
+CCOL_LIGHTRED	myqq.c	149;"	d	file:
+CCOL_NONE	myqq.c	127;"	d	file:
+CCOL_NONE	myqq.c	139;"	d	file:
+CCOL_PURPLE	myqq.c	150;"	d	file:
+CCOL_RED	myqq.c	148;"	d	file:
+CCOL_REDGREEN	myqq.c	126;"	d	file:
+CCOL_REDGREEN	myqq.c	156;"	d	file:
+CCOL_WHITE	myqq.c	155;"	d	file:
+CCOL_YELLOW	myqq.c	153;"	d	file:
+CFLAGS	Makefile	/^CFLAGS=		-c -Wall -O -Werror$/;"	m
+CFLAGS	linux.mak	/^CFLAGS=		-c -Werror$/;"	m
+CFLAGS	linux.webqq.mak	/^CFLAGS=		-c -Wall -g -O -Werror$/;"	m
+CFLAGS	release.mak	/^CFLAGS=		-c -Wall -O -Werror -s$/;"	m
+CFLAGS	webqq.mak	/^CFLAGS=		-c -Wall -g -O -Werror$/;"	m
+CFLAGS	webqq.release.mak	/^CFLAGS=		-c -Wall -s -Werror$/;"	m
+CMD_ADD	myqq.c	/^	CMD_ADD, CMD_ADD2,$/;"	e	enum:__anon9	file:
+CMD_ADD2	myqq.c	/^	CMD_ADD, CMD_ADD2,$/;"	e	enum:__anon9	file:
+CMD_CHANGE	myqq.c	/^	CMD_CHANGE, CMD_CHANGE2,$/;"	e	enum:__anon9	file:
+CMD_CHANGE2	myqq.c	/^	CMD_CHANGE, CMD_CHANGE2,$/;"	e	enum:__anon9	file:
+CMD_DEL	myqq.c	/^	CMD_DEL$/;"	e	enum:__anon9	file:
+CMD_ENTER	myqq.c	/^	CMD_ENTER, CMD_ENTER2,$/;"	e	enum:__anon9	file:
+CMD_ENTER2	myqq.c	/^	CMD_ENTER, CMD_ENTER2,$/;"	e	enum:__anon9	file:
+CMD_EXIT	myqq.c	/^	CMD_EXIT = 0, CMD_EXIT2,$/;"	e	enum:__anon9	file:
+CMD_EXIT2	myqq.c	/^	CMD_EXIT = 0, CMD_EXIT2,$/;"	e	enum:__anon9	file:
+CMD_HELP	myqq.c	/^	CMD_HELP,$/;"	e	enum:__anon9	file:
+CMD_INFO	myqq.c	/^	CMD_INFO, CMD_INFO2,$/;"	e	enum:__anon9	file:
+CMD_INFO2	myqq.c	/^	CMD_INFO, CMD_INFO2,$/;"	e	enum:__anon9	file:
+CMD_LEAVE	myqq.c	/^	CMD_LEAVE, CMD_LEAVE2,$/;"	e	enum:__anon9	file:
+CMD_LEAVE2	myqq.c	/^	CMD_LEAVE, CMD_LEAVE2,$/;"	e	enum:__anon9	file:
+CMD_QUN	myqq.c	/^	CMD_QUN, CMD_QUN2,$/;"	e	enum:__anon9	file:
+CMD_QUN2	myqq.c	/^	CMD_QUN, CMD_QUN2,$/;"	e	enum:__anon9	file:
+CMD_SAY	myqq.c	/^	CMD_SAY, CMD_SAY2,$/;"	e	enum:__anon9	file:
+CMD_SAY2	myqq.c	/^	CMD_SAY, CMD_SAY2,$/;"	e	enum:__anon9	file:
+CMD_STATUS	myqq.c	/^	CMD_STATUS,$/;"	e	enum:__anon9	file:
+CMD_TEST	myqq.c	/^	CMD_TEST,$/;"	e	enum:__anon9	file:
+CMD_TO	myqq.c	/^	CMD_TO, CMD_TO2,$/;"	e	enum:__anon9	file:
+CMD_TO2	myqq.c	/^	CMD_TO, CMD_TO2,$/;"	e	enum:__anon9	file:
+CMD_UPDATE	myqq.c	/^	CMD_UPDATE, CMD_UPDATE2,$/;"	e	enum:__anon9	file:
+CMD_UPDATE2	myqq.c	/^	CMD_UPDATE, CMD_UPDATE2,$/;"	e	enum:__anon9	file:
+CMD_VERIFY	myqq.c	/^	CMD_VERIFY, CMD_VERIFY2,$/;"	e	enum:__anon9	file:
+CMD_VERIFY2	myqq.c	/^	CMD_VERIFY, CMD_VERIFY2,$/;"	e	enum:__anon9	file:
+CMD_VIEW	myqq.c	/^	CMD_VIEW, CMD_VIEW2,$/;"	e	enum:__anon9	file:
+CMD_VIEW2	myqq.c	/^	CMD_VIEW, CMD_VIEW2,$/;"	e	enum:__anon9	file:
+CMD_WHO	myqq.c	/^	CMD_WHO, CMD_WHO2,$/;"	e	enum:__anon9	file:
+CMD_WHO2	myqq.c	/^	CMD_WHO, CMD_WHO2,$/;"	e	enum:__anon9	file:
+CN_TIME	qqdef.h	15;"	d
+CONFIG_NAME_LEN	config.h	5;"	d
+CONFIG_VALUE_LEN	config.h	6;"	d
+CRC32	crc32.c	/^static uint	CRC32[256];$/;"	v	file:
+DBG	debug.h	11;"	d
+DBG	debug.h	14;"	d
+DEL	memory.h	25;"	d
+EXPORT	webqq.h	19;"	d
+EXPORT	webqq.h	21;"	d
+EXPORT	webqq.h	25;"	d
+F	md5.c	213;"	d	file:
+G	md5.c	239;"	d	file:
+GROUPNAME_LEN	qqdef.h	46;"	d
+H	md5.c	265;"	d	file:
+I	md5.c	291;"	d	file:
+IM_KEY	protocol.h	/^	IM_KEY$/;"	e	enum:KEY_TYPE
+INTERVAL	qqclient.c	152;"	d	file:
+KB	qqdef.h	13;"	d
+KEY_TYPE	protocol.h	/^enum KEY_TYPE{$/;"	g
+LD	Makefile	/^LD=		gcc$/;"	m
+LD	linux.mak	/^LD=		gcc$/;"	m
+LD	linux.webqq.mak	/^LD=		gcc$/;"	m
+LD	release.mak	/^LD=		gcc$/;"	m
+LD	webqq.mak	/^LD=		gcc$/;"	m
+LD	webqq.release.mak	/^LD=		gcc$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS=	-lpthreadGC2 -lws2_32 -I"..\/lib\/pthread" -L"..\/lib\/pthread"$/;"	m
+LDFLAGS	linux.mak	/^LDFLAGS=	-lpthread -s$/;"	m
+LDFLAGS	linux.webqq.mak	/^LDFLAGS=	-lpthread -shared$/;"	m
+LDFLAGS	release.mak	/^LDFLAGS=	-lpthreadGC2 -lws2_32 -s$/;"	m
+LDFLAGS	webqq.mak	/^LDFLAGS=	-lpthreadGC2 -lws2_32 -shared -I"..\/lib\/pthread" -L"..\/lib\/pthread"$/;"	m
+LDFLAGS	webqq.release.mak	/^LDFLAGS=	-lpthreadGC2 -lws2_32 -shared -s -I"..\/lib\/pthread" -L"..\/lib\/pthread"$/;"	m
+LOGIN_KEY	protocol.h	/^	LOGIN_KEY,$/;"	e	enum:KEY_TYPE
+LOGIN_PROCESS	qqclient.h	/^enum LOGIN_PROCESS{$/;"	g
+MAX_ALLOCATION	memory.h	8;"	d
+MAX_BUDDY	qqdef.h	35;"	d
+MAX_COMMAND	qqdef.h	34;"	d
+MAX_EVENT	qqdef.h	39;"	d
+MAX_GROUP	qqdef.h	38;"	d
+MAX_LOOP_PACKET	qqdef.h	33;"	d
+MAX_QUN	qqdef.h	36;"	d
+MAX_QUN_MEMBER	qqdef.h	37;"	d
+MAX_SERVER_ADDR	qqdef.h	51;"	d
+MAX_USERS	webqq.c	41;"	d	file:
+MAX_USER_INFO	qqdef.h	41;"	d
+MB	qqdef.h	14;"	d
+MEMO_LEN	memory.h	7;"	d
+MESSAGE_TYPE	qqdef.h	/^enum MESSAGE_TYPE{$/;"	g
+MIN	qqdef.h	12;"	d
+MSG	debug.h	17;"	d
+MSG	myqq.c	49;"	d	file:
+MSG_CONTENT_LEN	qqdef.h	81;"	d
+MT_BUDDY	qqdef.h	/^	MT_BUDDY,$/;"	e	enum:MESSAGE_TYPE
+MT_NEWS	qqdef.h	/^	MT_NEWS,$/;"	e	enum:MESSAGE_TYPE
+MT_QUN	qqdef.h	/^	MT_QUN,$/;"	e	enum:MESSAGE_TYPE
+MT_QUN_MEMBER	qqdef.h	/^	MT_QUN_MEMBER$/;"	e	enum:MESSAGE_TYPE
+MT_SYSTEM	qqdef.h	/^	MT_SYSTEM,$/;"	e	enum:MESSAGE_TYPE
+NAME	config.c	/^	NAME,$/;"	e	enum:PARSING	file:
+NEW	memory.h	24;"	d
+NICKNAME_LEN	qqdef.h	45;"	d
+NO_KEY	protocol.h	/^	NO_KEY,$/;"	e	enum:KEY_TYPE
+OBJS	Makefile	/^OBJS=		qqsocket.o qqcrypt.o md5.o debug.o qqclient.o memory.o config.o packetmgr.o qqpacket.o \\$/;"	m
+OBJS	linux.mak	/^OBJS=		qqsocket.o qqcrypt.o md5.o debug.o qqclient.o memory.o config.o packetmgr.o qqpacket.o \\$/;"	m
+OBJS	linux.webqq.mak	/^OBJS=		qqsocket.o qqcrypt.o md5.o debug.o qqclient.o memory.o config.o packetmgr.o qqpacket.o \\$/;"	m
+OBJS	release.mak	/^OBJS=		qqsocket.o qqcrypt.o md5.o debug.o qqclient.o memory.o config.o packetmgr.o qqpacket.o \\$/;"	m
+OBJS	webqq.mak	/^OBJS=		qqsocket.o qqcrypt.o md5.o debug.o qqclient.o memory.o config.o packetmgr.o qqpacket.o \\$/;"	m
+OBJS	webqq.release.mak	/^OBJS=		qqsocket.o qqcrypt.o md5.o debug.o qqclient.o memory.o config.o packetmgr.o qqpacket.o \\$/;"	m
+OP_ADDBUDDY	protocol.h	/^	OP_ADDBUDDY = 0x01,$/;"	e	enum:__anon3
+OP_DELBUDDY	protocol.h	/^	OP_DELBUDDY$/;"	e	enum:__anon3
+PACKET_SIZE	qqpacket.h	6;"	d
+PARSING	config.c	/^enum PARSING{$/;"	g	file:
+PATH_LEN	qqdef.h	49;"	d
+PRINT_BUF_SIZE	myqq.c	53;"	d	file:
+P_BUSY	qqclient.h	/^	P_BUSY$/;"	e	enum:LOGIN_PROCESS
+P_DENIED	qqclient.h	/^	P_DENIED,$/;"	e	enum:LOGIN_PROCESS
+P_ERROR	qqclient.h	/^	P_ERROR,$/;"	e	enum:LOGIN_PROCESS
+P_INIT	qqclient.h	/^	P_INIT = 0,$/;"	e	enum:LOGIN_PROCESS
+P_LOGGING	qqclient.h	/^	P_LOGGING,$/;"	e	enum:LOGIN_PROCESS
+P_LOGIN	qqclient.h	/^	P_LOGIN,$/;"	e	enum:LOGIN_PROCESS
+P_VERIFYING	qqclient.h	/^	P_VERIFYING,$/;"	e	enum:LOGIN_PROCESS
+P_WRONGPASS	qqclient.h	/^	P_WRONGPASS,$/;"	e	enum:LOGIN_PROCESS
+QQSTATUS	qqdef.h	/^enum QQSTATUS{$/;"	g
+QQ_AWAY	qqdef.h	/^	QQ_AWAY = 0x1e,$/;"	e	enum:QQSTATUS
+QQ_BUSY	qqdef.h	/^	QQ_BUSY = 0x32,$/;"	e	enum:QQSTATUS
+QQ_CMD	protocol.h	/^enum QQ_CMD{$/;"	g
+QQ_CMD_ACCOUNT	protocol.h	/^	QQ_CMD_ACCOUNT = 0x00b5,$/;"	e	enum:QQ_CMD
+QQ_CMD_ADDBUDDY_QUESTION	protocol.h	/^	QQ_CMD_ADDBUDDY_QUESTION = 0x00B7,$/;"	e	enum:QQ_CMD
+QQ_CMD_ADDBUDDY_REQUEST	protocol.h	/^	QQ_CMD_ADDBUDDY_REQUEST = 0x00A7,$/;"	e	enum:QQ_CMD
+QQ_CMD_ADDBUDDY_VERIFY	protocol.h	/^	QQ_CMD_ADDBUDDY_VERIFY = 0x00A8,$/;"	e	enum:QQ_CMD
+QQ_CMD_BROADCAST	protocol.h	/^	QQ_CMD_BROADCAST = 0x0080,$/;"	e	enum:QQ_CMD
+QQ_CMD_BUDDY_ALIAS	protocol.h	/^	QQ_CMD_BUDDY_ALIAS = 0x003e,$/;"	e	enum:QQ_CMD
+QQ_CMD_BUDDY_STATUS	protocol.h	/^	QQ_CMD_BUDDY_STATUS = 0x0081,$/;"	e	enum:QQ_CMD
+QQ_CMD_CHANGE_STATUS	protocol.h	/^	QQ_CMD_CHANGE_STATUS = 0x000d,$/;"	e	enum:QQ_CMD
+QQ_CMD_CHECK_IP	protocol.h	/^	QQ_CMD_CHECK_IP = 0x00da,$/;"	e	enum:QQ_CMD
+QQ_CMD_DEL_BUDDY	protocol.h	/^	QQ_CMD_DEL_BUDDY = 0x000a$/;"	e	enum:QQ_CMD
+QQ_CMD_GET_BUDDY_LIST	protocol.h	/^	QQ_CMD_GET_BUDDY_LIST = 0x0126,$/;"	e	enum:QQ_CMD
+QQ_CMD_GET_BUDDY_ONLINE	protocol.h	/^	QQ_CMD_GET_BUDDY_ONLINE = 0x0027,$/;"	e	enum:QQ_CMD
+QQ_CMD_GET_BUDDY_SIGN	protocol.h	/^	QQ_CMD_GET_BUDDY_SIGN = 0x0067,$/;"	e	enum:QQ_CMD
+QQ_CMD_GET_KEY	protocol.h	/^	QQ_CMD_GET_KEY = 0x001d,$/;"	e	enum:QQ_CMD
+QQ_CMD_GET_LEVEL	protocol.h	/^	QQ_CMD_GET_LEVEL = 0x005C,$/;"	e	enum:QQ_CMD
+QQ_CMD_GET_NOTICE	protocol.h	/^	QQ_CMD_GET_NOTICE = 0x00d4,$/;"	e	enum:QQ_CMD
+QQ_CMD_GET_USER_INFO	protocol.h	/^	QQ_CMD_GET_USER_INFO = 0x0006,$/;"	e	enum:QQ_CMD
+QQ_CMD_GROUP_LABEL	protocol.h	/^	QQ_CMD_GROUP_LABEL = 0x0001,$/;"	e	enum:QQ_CMD
+QQ_CMD_KEEP_ALIVE	protocol.h	/^	QQ_CMD_KEEP_ALIVE = 0x0058,$/;"	e	enum:QQ_CMD
+QQ_CMD_LOGIN_GET_INFO	protocol.h	/^	QQ_CMD_LOGIN_GET_INFO = 0x00e5,	$/;"	e	enum:QQ_CMD
+QQ_CMD_LOGIN_GET_LIST	protocol.h	/^	QQ_CMD_LOGIN_GET_LIST = 0x0018,$/;"	e	enum:QQ_CMD
+QQ_CMD_LOGIN_REQUEST	protocol.h	/^	QQ_CMD_LOGIN_REQUEST  = 0x00ba,$/;"	e	enum:QQ_CMD
+QQ_CMD_LOGIN_SEND_INFO	protocol.h	/^	QQ_CMD_LOGIN_SEND_INFO = 0x0030,$/;"	e	enum:QQ_CMD
+QQ_CMD_LOGIN_VERIFY	protocol.h	/^	QQ_CMD_LOGIN_VERIFY = 0x00dd,$/;"	e	enum:QQ_CMD
+QQ_CMD_LOGOUT	protocol.h	/^	QQ_CMD_LOGOUT = 0x0062,	$/;"	e	enum:QQ_CMD
+QQ_CMD_QUN_CMD	protocol.h	/^	QQ_CMD_QUN_CMD = 0x0002,$/;"	e	enum:QQ_CMD
+QQ_CMD_RECV_IM	protocol.h	/^	QQ_CMD_RECV_IM = 0x0017,$/;"	e	enum:QQ_CMD
+QQ_CMD_RECV_IM_09	protocol.h	/^	QQ_CMD_RECV_IM_09 = 0x00ce,$/;"	e	enum:QQ_CMD
+QQ_CMD_REQUEST_TOKEN	protocol.h	/^	QQ_CMD_REQUEST_TOKEN = 0x00ae,$/;"	e	enum:QQ_CMD
+QQ_CMD_SEND_IM	protocol.h	/^	QQ_CMD_SEND_IM = 0x00cd,$/;"	e	enum:QQ_CMD
+QQ_CMD_TOUCH	protocol.h	/^	QQ_CMD_TOUCH = 0x0091,$/;"	e	enum:QQ_CMD
+QQ_HIDDEN	qqdef.h	/^	QQ_HIDDEN = 0x28$/;"	e	enum:QQSTATUS
+QQ_IM_AUTO_REPLY	protocol.h	/^	QQ_IM_AUTO_REPLY = 0x02$/;"	e	enum:__anon5
+QQ_IM_TEXT	protocol.h	/^	QQ_IM_TEXT = 0x01,$/;"	e	enum:__anon5
+QQ_KILLME	qqdef.h	/^	QQ_KILLME = 0x3C,$/;"	e	enum:QQSTATUS
+QQ_NONE	qqdef.h	/^	QQ_NONE = 0x00,$/;"	e	enum:QQSTATUS
+QQ_NORMAL_IM_FILE_APPROVE_TCP	protocol.h	/^	QQ_NORMAL_IM_FILE_APPROVE_TCP = 0x0003,$/;"	e	enum:__anon7
+QQ_NORMAL_IM_FILE_APPROVE_UDP	protocol.h	/^	QQ_NORMAL_IM_FILE_APPROVE_UDP = 0x0037,$/;"	e	enum:__anon7
+QQ_NORMAL_IM_FILE_CANCEL	protocol.h	/^	QQ_NORMAL_IM_FILE_CANCEL = 0x0049,$/;"	e	enum:__anon7
+QQ_NORMAL_IM_FILE_EX_NOTIFY_IP	protocol.h	/^	QQ_NORMAL_IM_FILE_EX_NOTIFY_IP = 0x87$/;"	e	enum:__anon7
+QQ_NORMAL_IM_FILE_EX_REQUEST_ACCEPT	protocol.h	/^	QQ_NORMAL_IM_FILE_EX_REQUEST_ACCEPT = 0x83,$/;"	e	enum:__anon7
+QQ_NORMAL_IM_FILE_EX_REQUEST_CANCEL	protocol.h	/^	QQ_NORMAL_IM_FILE_EX_REQUEST_CANCEL = 0x85,$/;"	e	enum:__anon7
+QQ_NORMAL_IM_FILE_EX_REQUEST_UDP	protocol.h	/^	QQ_NORMAL_IM_FILE_EX_REQUEST_UDP = 0x81,$/;"	e	enum:__anon7
+QQ_NORMAL_IM_FILE_NOTIFY	protocol.h	/^	QQ_NORMAL_IM_FILE_NOTIFY = 0x003b,$/;"	e	enum:__anon7
+QQ_NORMAL_IM_FILE_PASV	protocol.h	/^	QQ_NORMAL_IM_FILE_PASV = 0x003f,$/;"	e	enum:__anon7
+QQ_NORMAL_IM_FILE_REJECT_TCP	protocol.h	/^	QQ_NORMAL_IM_FILE_REJECT_TCP = 0x0005,$/;"	e	enum:__anon7
+QQ_NORMAL_IM_FILE_REJECT_UDP	protocol.h	/^	QQ_NORMAL_IM_FILE_REJECT_UDP = 0x0039,$/;"	e	enum:__anon7
+QQ_NORMAL_IM_FILE_REQUEST_TCP	protocol.h	/^	QQ_NORMAL_IM_FILE_REQUEST_TCP = 0x0001,$/;"	e	enum:__anon7
+QQ_NORMAL_IM_FILE_REQUEST_UDP	protocol.h	/^	QQ_NORMAL_IM_FILE_REQUEST_UDP = 0x0035,$/;"	e	enum:__anon7
+QQ_NORMAL_IM_TEXT	protocol.h	/^	QQ_NORMAL_IM_TEXT = 0x000b,$/;"	e	enum:__anon7
+QQ_OFFLINE	qqdef.h	/^	QQ_OFFLINE = 0x14,$/;"	e	enum:QQSTATUS
+QQ_ONLINE	qqdef.h	/^	QQ_ONLINE = 0x0a,$/;"	e	enum:QQSTATUS
+QQ_QUIET	qqdef.h	/^	QQ_QUIET = 0x46,$/;"	e	enum:QQSTATUS
+QQ_RECV_IM_ADD_TO_QUN	protocol.h	/^	QQ_RECV_IM_ADD_TO_QUN = 0x0021,$/;"	e	enum:__anon6
+QQ_RECV_IM_APPLY_ADD_TO_QUN	protocol.h	/^	QQ_RECV_IM_APPLY_ADD_TO_QUN = 0x0023,$/;"	e	enum:__anon6
+QQ_RECV_IM_APPROVE_APPLY_ADD_TO_QUN	protocol.h	/^	QQ_RECV_IM_APPROVE_APPLY_ADD_TO_QUN = 0x0024,$/;"	e	enum:__anon6
+QQ_RECV_IM_BUDDY_0801	protocol.h	/^	QQ_RECV_IM_BUDDY_0801 = 0x0009,$/;"	e	enum:__anon6
+QQ_RECV_IM_BUDDY_0802	protocol.h	/^	QQ_RECV_IM_BUDDY_0802 = 0x0084,$/;"	e	enum:__anon6
+QQ_RECV_IM_BUDDY_09	protocol.h	/^	QQ_RECV_IM_BUDDY_09 = 0x0078	\/\/09 Message$/;"	e	enum:__anon6
+QQ_RECV_IM_CREATE_QUN	protocol.h	/^	QQ_RECV_IM_CREATE_QUN = 0x0026,$/;"	e	enum:__anon6
+QQ_RECV_IM_DEL_FROM_QUN	protocol.h	/^	QQ_RECV_IM_DEL_FROM_QUN = 0x0022,$/;"	e	enum:__anon6
+QQ_RECV_IM_NEWS	protocol.h	/^	QQ_RECV_IM_NEWS = 0x0018,$/;"	e	enum:__anon6
+QQ_RECV_IM_QUN_IM	protocol.h	/^	QQ_RECV_IM_QUN_IM = 0x002B,$/;"	e	enum:__anon6
+QQ_RECV_IM_QUN_IM_09	protocol.h	/^	QQ_RECV_IM_QUN_IM_09 = 0x0052,$/;"	e	enum:__anon6
+QQ_RECV_IM_QUN_MEMBER_IM	protocol.h	/^	QQ_RECV_IM_QUN_MEMBER_IM = 0x008C,$/;"	e	enum:__anon6
+QQ_RECV_IM_REJCT_APPLY_ADD_TO_QUN	protocol.h	/^	QQ_RECV_IM_REJCT_APPLY_ADD_TO_QUN = 0x0025,$/;"	e	enum:__anon6
+QQ_RECV_IM_SYS_NOTIFICATION	protocol.h	/^	QQ_RECV_IM_SYS_NOTIFICATION = 0x0030,$/;"	e	enum:__anon6
+QQ_RECV_IM_TEMP_QUN_IM	protocol.h	/^	QQ_RECV_IM_TEMP_QUN_IM = 0x002A,$/;"	e	enum:__anon6
+QQ_RECV_IM_TO_UNKNOWN	protocol.h	/^	QQ_RECV_IM_TO_UNKNOWN = 0x000a,$/;"	e	enum:__anon6
+QQ_RECV_IM_UNKNOWN_QUN_IM	protocol.h	/^	QQ_RECV_IM_UNKNOWN_QUN_IM = 0x0020,$/;"	e	enum:__anon6
+QQ_RECV_IM_WRITING	protocol.h	/^	QQ_RECV_IM_WRITING = 0x0079,$/;"	e	enum:__anon6
+QQ_VERSION	qqdef.h	60;"	d
+QUN_BUF_SIZE	myqq.c	51;"	d	file:
+RANDOM	prot_login.c	41;"	d	file:
+RANDOM_KEY	protocol.h	/^	RANDOM_KEY,$/;"	e	enum:KEY_TYPE
+RESET_INPUT	myqq.c	169;"	d	file:
+ROTATE_LEFT	md5.c	208;"	d	file:
+SESSION_KEY	protocol.h	/^	SESSION_KEY,$/;"	e	enum:KEY_TYPE
+SET	md5.c	214;"	d	file:
+SET	md5.c	234;"	d	file:
+SET	md5.c	240;"	d	file:
+SET	md5.c	260;"	d	file:
+SET	md5.c	266;"	d	file:
+SET	md5.c	286;"	d	file:
+SET	md5.c	292;"	d	file:
+SET	md5.c	312;"	d	file:
+SIGNITURE_LEN	qqdef.h	42;"	d
+SLEEP	qqdef.h	19;"	d
+SLEEP	qqdef.h	22;"	d
+STDCALL	webqq.h	17;"	d
+T1	md5.c	100;"	d	file:
+T10	md5.c	109;"	d	file:
+T11	md5.c	110;"	d	file:
+T12	md5.c	111;"	d	file:
+T13	md5.c	112;"	d	file:
+T14	md5.c	113;"	d	file:
+T15	md5.c	114;"	d	file:
+T16	md5.c	115;"	d	file:
+T17	md5.c	116;"	d	file:
+T18	md5.c	117;"	d	file:
+T19	md5.c	118;"	d	file:
+T2	md5.c	101;"	d	file:
+T20	md5.c	119;"	d	file:
+T21	md5.c	120;"	d	file:
+T22	md5.c	121;"	d	file:
+T23	md5.c	122;"	d	file:
+T24	md5.c	123;"	d	file:
+T25	md5.c	124;"	d	file:
+T26	md5.c	125;"	d	file:
+T27	md5.c	126;"	d	file:
+T28	md5.c	127;"	d	file:
+T29	md5.c	128;"	d	file:
+T3	md5.c	102;"	d	file:
+T30	md5.c	129;"	d	file:
+T31	md5.c	130;"	d	file:
+T32	md5.c	131;"	d	file:
+T33	md5.c	132;"	d	file:
+T34	md5.c	133;"	d	file:
+T35	md5.c	134;"	d	file:
+T36	md5.c	135;"	d	file:
+T37	md5.c	136;"	d	file:
+T38	md5.c	137;"	d	file:
+T39	md5.c	138;"	d	file:
+T4	md5.c	103;"	d	file:
+T40	md5.c	139;"	d	file:
+T41	md5.c	140;"	d	file:
+T42	md5.c	141;"	d	file:
+T43	md5.c	142;"	d	file:
+T44	md5.c	143;"	d	file:
+T45	md5.c	144;"	d	file:
+T46	md5.c	145;"	d	file:
+T47	md5.c	146;"	d	file:
+T48	md5.c	147;"	d	file:
+T49	md5.c	148;"	d	file:
+T5	md5.c	104;"	d	file:
+T50	md5.c	149;"	d	file:
+T51	md5.c	150;"	d	file:
+T52	md5.c	151;"	d	file:
+T53	md5.c	152;"	d	file:
+T54	md5.c	153;"	d	file:
+T55	md5.c	154;"	d	file:
+T56	md5.c	155;"	d	file:
+T57	md5.c	156;"	d	file:
+T58	md5.c	157;"	d	file:
+T59	md5.c	158;"	d	file:
+T6	md5.c	105;"	d	file:
+T60	md5.c	159;"	d	file:
+T61	md5.c	160;"	d	file:
+T62	md5.c	161;"	d	file:
+T63	md5.c	162;"	d	file:
+T64	md5.c	163;"	d	file:
+T7	md5.c	106;"	d	file:
+T8	md5.c	107;"	d	file:
+T9	md5.c	108;"	d	file:
+TARGET	Makefile	/^TARGET=	..\/myqq.exe$/;"	m
+TARGET	linux.mak	/^TARGET=	..\/myqq$/;"	m
+TARGET	linux.webqq.mak	/^TARGET=	..\/webqq.so$/;"	m
+TARGET	release.mak	/^TARGET=	..\/myqq.exe$/;"	m
+TARGET	webqq.mak	/^TARGET=	..\/webqq.dll$/;"	m
+TARGET	webqq.release.mak	/^TARGET=	..\/webqq.dll$/;"	m
+TCP	qqsocket.h	7;"	d
+TIMEOUT	webqq.c	40;"	d	file:
+TOKEN_LEN	qqdef.h	43;"	d
+UDP	qqsocket.h	8;"	d
+USER_INFO_LEN	qqdef.h	40;"	d
+USLEEP	qqdef.h	20;"	d
+USLEEP	qqdef.h	23;"	d
+VALUE	config.c	/^	VALUE$/;"	e	enum:PARSING	file:
+VERIFY_MODE	protocol.h	/^enum VERIFY_MODE{$/;"	g
+VF_OK	protocol.h	/^	VF_OK = 0x00,$/;"	e	enum:__anon4
+VF_QUESTION	protocol.h	/^	VF_QUESTION = 0x03,$/;"	e	enum:__anon4
+VF_REJECT	protocol.h	/^	VF_REJECT = 0x02,$/;"	e	enum:__anon4
+VF_VERIFY	protocol.h	/^	VF_VERIFY = 0x01,$/;"	e	enum:__anon4
+VM_ANSWER	protocol.h	/^	VM_ANSWER$/;"	e	enum:VERIFY_MODE
+VM_GET	protocol.h	/^	VM_GET,$/;"	e	enum:VERIFY_MODE
+VM_NO	protocol.h	/^	VM_NO,$/;"	e	enum:VERIFY_MODE
+WEBQQLIB	webqq.c	14;"	d	file:
+_BUDDY_H	buddy.h	2;"	d
+_CONFIG_H	config.h	3;"	d
+_CRC32_H	crc32.h	2;"	d
+_CRYPT_H	qqcrypt.h	28;"	d
+_DEBUG_H	debug.h	2;"	d
+_GROUP_H	group.h	2;"	d
+_LIST_H	list.h	2;"	d
+_LOOP_H	loop.h	2;"	d
+_MEMORY_H	memory.h	2;"	d
+_PACKETMGR_H	packetmgr.h	2;"	d
+_PACKET_H	qqpacket.h	2;"	d
+_PROTOCOL_H	protocol.h	2;"	d
+_QQCLIENT_H	qqclient.h	2;"	d
+_QQDEF_H	qqdef.h	2;"	d
+_QQSOCKET_H	qqsocket.h	2;"	d
+_QUN_H	qun.h	2;"	d
+_TEXT	myqq.c	183;"	d	file:
+_TEXT	myqq.c	198;"	d	file:
+_UTF8_H	utf8.h	2;"	d
+_UTIL_H	util.h	2;"	d
+_WEBQQ_H	webqq.h	2;"	d
+abcd	md5.h	/^    md5_word_t abcd[4];		\/* digest buffer *\/$/;"	m	struct:md5_state_s
+account	buddy.h	/^	char		account[1];$/;"	m	struct:qqbuddy
+account	buddy.h	/^	char		account[ACCOUNT_LEN];	\/\/email account$/;"	m	struct:qqbuddy
+account	qun.h	/^	char		account[ACCOUNT_LEN];	\/\/email account$/;"	m	struct:qunmember
+account_flag	buddy.h	/^	uchar		account_flag;$/;"	m	struct:qqbuddy
+account_flag	qun.h	/^	uchar		account_flag;$/;"	m	struct:qunmember
+active_days	qqclient.h	/^	ushort		active_days;$/;"	m	struct:qqclient
+add	config.c	/^static void add( config* c, char* name, char* value )$/;"	f	file:
+addbuddy_str	protocol.h	/^	char		addbuddy_str[64];$/;"	m	struct:qqdata_2009
+age	buddy.h	/^	uchar		age;$/;"	m	struct:qqbuddy
+age	qun.h	/^	uchar		age;$/;"	m	struct:qunmember
+alias	buddy.h	/^	char		alias[1];$/;"	m	struct:qqbuddy
+alias	buddy.h	/^	char		alias[ALIAS_LEN];$/;"	m	struct:qqbuddy
+allocation	memory.h	/^typedef struct allocation{$/;"	s
+allocation	memory.h	/^}allocation;$/;"	t	typeref:struct:allocation
+ann	qun.h	/^	char		ann[256];	\/\/announcement	( too long the word )$/;"	m	struct:qqqun
+auth_type	qun.h	/^	uchar		auth_type;$/;"	m	struct:qqqun
+auto_accept	qqclient.h	/^	char		auto_accept;	\/\/accept addbuddy requests$/;"	m	struct:qqclient
+auto_reply	qqclient.h	/^	char		auto_reply[AUTO_REPLY_LEN];$/;"	m	struct:qqclient
+auto_reply	qqdef.h	/^	char	auto_reply;$/;"	m	struct:qqmessage
+buddy_buf	myqq.c	/^static char* qun_buf, *buddy_buf, *print_buf;$/;"	v	file:
+buddy_comp	buddy.c	/^static int buddy_comp(const void *p, const void *q)$/;"	f	file:
+buddy_get	buddy.c	/^qqbuddy* buddy_get( qqclient* qq, uint number, int create )$/;"	f
+buddy_list	qqclient.h	/^	list		buddy_list;$/;"	m	struct:qqclient
+buddy_msg_callback	myqq.c	/^void buddy_msg_callback ( qqclient* qq, uint uid, time_t t, char* msg )$/;"	f
+buddy_msg_callback	webqq.c	/^void buddy_msg_callback ( qqclient* qq, uint uid, time_t t, char* msg )$/;"	f
+buddy_put_event	buddy.c	/^void buddy_put_event( qqclient* qq )$/;"	f
+buddy_remove	buddy.c	/^void buddy_remove( qqclient* qq, uint number )$/;"	f
+buddy_send_message	buddy.c	/^int buddy_send_message( qqclient* qq, uint number, char* msg )$/;"	f
+buddy_set_all_off	buddy.c	/^void buddy_set_all_off( struct qqclient* qq )$/;"	f
+buddy_sort_list	buddy.c	/^void buddy_sort_list( qqclient* qq )$/;"	f
+buddy_status_string	buddy.c	/^char* buddy_status_string( int st )$/;"	f
+buddy_update_info	buddy.c	/^void buddy_update_info( qqclient* qq, qqbuddy* b )$/;"	f
+buddy_update_list	buddy.c	/^void buddy_update_list( qqclient* qq )$/;"	f
+buddyoff_searcher	buddy.c	/^static int buddyoff_searcher( const void* p, const void* v )$/;"	f	file:
+buf	md5.h	/^    md5_byte_t buf[64];		\/* accumulate block *\/$/;"	m	struct:md5_state_s
+buf	qqpacket.h	/^	bytebuffer*	buf;$/;"	m	struct:qqpacket
+bytebuffer	qqpacket.h	/^typedef struct bytebuffer{$/;"	s
+bytebuffer	qqpacket.h	/^}bytebuffer;$/;"	t	typeref:struct:bytebuffer
+c_redirect_count	protocol.h	/^			uchar	c_redirect_count;$/;"	m	struct:qqdata_2009::__anon1::__anon2
+category	qun.h	/^	uint		category;$/;"	m	struct:qqqun
+cconfig	config.h	/^typedef struct cconfig{$/;"	s
+charcolor	myqq.c	/^static void charcolor( const char* col )$/;"	f	file:
+charcolor	myqq.c	/^static void charcolor( int col )$/;"	f	file:
+check_ready_packets	packetmgr.c	/^static void check_ready_packets( qqclient* qq )$/;"	f	file:
+client_ip	qqclient.h	/^	uint		client_ip;$/;"	m	struct:qqclient
+client_port	qqclient.h	/^	ushort		client_port;$/;"	m	struct:qqclient
+color_index	myqq.c	/^static char* color_index = CCOL_NONE;$/;"	v	file:
+color_index	myqq.c	/^static int color_index = CCOL_NONE; $/;"	v	file:
+command	qqpacket.h	/^	ushort		command;$/;"	m	struct:qqpacket
+commands	myqq.c	/^static char commands[][16]={$/;"	v	file:
+comp_func	list.h	/^typedef int (*comp_func)(const void *, const void *);$/;"	t
+config	config.h	/^}config;$/;"	t	typeref:struct:cconfig
+config_close	config.c	/^void config_close( config* c )$/;"	f
+config_end	config.c	/^void config_end()$/;"	f
+config_init	config.c	/^void config_init()$/;"	f
+config_item	config.h	/^typedef struct config_item{$/;"	s
+config_item	config.h	/^}config_item;$/;"	t	typeref:struct:config_item
+config_open	config.c	/^int config_open( config* c, char* filename )$/;"	f
+config_readint	config.c	/^int config_readint( config*c, char* name )$/;"	f
+config_readstr	config.c	/^char* config_readstr( config*c, char* name )$/;"	f
+conn_ip	protocol.h	/^			uint	conn_ip;$/;"	m	struct:qqdata_2009::__anon1::__anon2
+conn_isp_id	protocol.h	/^			uint	conn_isp_id;$/;"	m	struct:qqdata_2009::__anon1::__anon2
+connect_server	qqclient.c	/^int connect_server( qqclient* qq )$/;"	f
+count	list.h	/^	int		count;$/;"	m	struct:list
+count	md5.h	/^    md5_word_t count[2];	\/* message length in bits, lsw first *\/$/;"	m	struct:md5_state_s
+crc32	crc32.c	/^uint crc32( uchar *buf, int len)$/;"	f
+create_time	webqq.h	/^	time_t	create_time;	\/\/$/;"	m	struct:user
+data	qqclient.h	/^		struct qqdata_2009	data;$/;"	m	union:qqclient::__anon8	typeref:struct:qqclient::__anon8::qqdata_2009
+data	qqdef.h	/^	uchar	data[TOKEN_LEN];$/;"	m	struct:token
+data	qqpacket.h	/^	uchar data[PACKET_SIZE];$/;"	m	struct:bytebuffer
+dbg_file	debug.c	/^static int dbg_term = 0, dbg_file = 0, log_day = 0;$/;"	v	file:
+dbg_term	debug.c	/^static int dbg_term = 0, dbg_file = 0, log_day = 0;$/;"	v	file:
+debug_file_off	debug.c	/^void debug_file_off()$/;"	f
+debug_file_on	debug.c	/^void debug_file_on()$/;"	f
+debug_set_dir	debug.c	/^void debug_set_dir(char* str)$/;"	f
+debug_term_off	debug.c	/^void debug_term_off()$/;"	f
+debug_term_on	debug.c	/^void debug_term_on()$/;"	f
+decipher	qqcrypt.c	/^static void decipher(unsigned int *const v, const unsigned int *const k, $/;"	f	file:
+decrypt_every_8_byte	qqcrypt.c	180;"	d	file:
+decrypt_packet	protocol.c	/^static int decrypt_packet( qqclient* qq, qqpacket* p, bytebuffer* buf )$/;"	f	file:
+decrypt_with_key	protocol.c	/^static int decrypt_with_key( qqclient* qq, qqpacket* p, bytebuffer* buf, uchar* key )$/;"	f	file:
+default_configs	config.c	/^static char default_configs[]="### Default Configuration ###\\n"$/;"	v	file:
+del_func	loop.h	/^	loop_delete_func	del_func;	\/\/溢出时，是否删除$/;"	m	struct:loop
+delete_func	packetmgr.c	/^static void delete_func(const void *p)$/;"	f	file:
+delete_func	qqclient.c	/^static void delete_func(const void *p)$/;"	f	file:
+delete_func	webqq.c	/^static void delete_func(const void *p)$/;"	f	file:
+dir	debug.c	/^static char dir[128]={0,}, filename[160];$/;"	v	file:
+encipher	qqcrypt.c	/^static void encipher(unsigned int *const v, const unsigned int *const k, $/;"	f	file:
+encrypt_every_8_byte	qqcrypt.c	111;"	d	file:
+enter	myqq.c	/^static int enter = 0;$/;"	v	file:
+event_loop	qqclient.h	/^	loop		event_loop;$/;"	m	struct:qqclient
+exe_hash	protocol.h	/^	uchar		exe_hash[16];$/;"	m	struct:qqdata_2009
+ext_number	qun.h	/^	uint		ext_number;	\/\/external number$/;"	m	struct:qqqun
+face	buddy.h	/^	ushort		face;$/;"	m	struct:qqbuddy
+face	qun.h	/^	ushort		face;$/;"	m	struct:qunmember
+failed_packets	packetmgr.h	/^	int 		failed_packets;$/;"	m	struct:qqpacketmgr
+file_key	protocol.h	/^	uchar		file_key[16];$/;"	m	struct:qqdata_2009
+file_token	protocol.h	/^	token		file_token;$/;"	m	struct:qqdata_2009
+filename	debug.c	/^static char dir[128]={0,}, filename[160];$/;"	v	file:
+flag	buddy.h	/^	uchar		flag;$/;"	m	struct:qqbuddy
+flag	qun.h	/^	uchar		flag;$/;"	m	struct:qunmember
+fp_log	debug.c	/^static FILE* fp_log = NULL;$/;"	v	file:
+from	qqdef.h	/^	uint	from;$/;"	m	struct:qqmessage
+g_conf	config.c	/^config *g_conf;$/;"	v
+g_md	memory.c	/^mem_detail* g_md;$/;"	v
+gb_to_utf8	utf8.c	/^void gb_to_utf8 ( char* src, char* dst, int len )$/;"	f
+gb_to_utf8	utf8.c	/^void gb_to_utf8( char* src, char* dst, int len )$/;"	f
+get_all_members	qun.c	/^static int get_all_members( const void* p, const void* v )$/;"	f	file:
+get_byte	qqpacket.c	/^uchar get_byte( bytebuffer* p )$/;"	f
+get_data	qqpacket.c	/^int get_data( bytebuffer* p, uchar* data, int len )$/;"	f
+get_int	qqpacket.c	/^uint get_int( bytebuffer* p )$/;"	f
+get_string	qqpacket.c	/^int get_string( bytebuffer* p, char* str, int len )$/;"	f
+get_token	qqpacket.c	/^int get_token( bytebuffer* p, token* tok )$/;"	f
+get_token2	qqpacket.c	/^int get_token2( bytebuffer* p, token* tok )$/;"	f
+get_user_searcher	webqq.c	/^static int get_user_searcher( const void* p, const void* v )$/;"	f	file:
+get_word	qqpacket.c	/^ushort get_word( bytebuffer* p )$/;"	f
+getline	myqq.c	/^static int getline(char *s, int lim) {$/;"	f	file:
+gid	buddy.h	/^	uchar		gid;$/;"	m	struct:qqbuddy
+group_get	group.c	/^qqgroup* group_get( struct qqclient* qq, uint number, int create )$/;"	f
+group_list	qqclient.h	/^	list		group_list;$/;"	m	struct:qqclient
+group_put_event	group.c	/^void group_put_event( qqclient* qq )$/;"	f
+group_remove	group.c	/^void group_remove( struct qqclient* qq, uint number )$/;"	f
+group_update_info	group.c	/^void group_update_info( qqclient* qq, qqgroup* g )$/;"	f
+group_update_list	group.c	/^void group_update_list( struct qqclient* qq )$/;"	f
+guarder_searcher	webqq.c	/^static int guarder_searcher( const void* p, const void* v )$/;"	f	file:
+handle_packet	packetmgr.c	/^int handle_packet( qqclient* qq, qqpacket* p, uchar* data, int len )$/;"	f
+has_camera	qqclient.h	/^	char		has_camera;$/;"	m	struct:qqclient
+head	loop.h	/^	int		head;$/;"	m	struct:loop
+head	qqpacket.h	/^	char		head;$/;"	m	struct:qqpacket
+help_msg	myqq.c	/^static char help_msg[]=$/;"	v	file:
+hex_dump	debug.c	/^void hex_dump( unsigned char * buf, int len )$/;"	f
+hex_str	debug.c	/^static char* hex_str(unsigned char *buf, int len, char* outstr )$/;"	f	file:
+http_request	util.c	/^int http_request( int* http_sock, char* url, char* session, char* data, int* datalen )$/;"	f
+http_sock	qqclient.h	/^	int			http_sock;$/;"	m	struct:qqclient
+im_key	protocol.h	/^	uchar		im_key[16];$/;"	m	struct:qqdata_2009
+im_type	qqdef.h	/^	ushort	im_type;$/;"	m	struct:qqmessage
+info_string	buddy.h	/^	char		info_string[1][1];$/;"	m	struct:qqbuddy
+info_string	buddy.h	/^	char		info_string[MAX_USER_INFO][USER_INFO_LEN];$/;"	m	struct:qqbuddy
+init	crc32.c	/^static char	init = 0;$/;"	v	file:
+init_file_path	debug.c	/^void init_file_path()$/;"	f
+init_table	crc32.c	/^static void init_table()$/;"	f	file:
+input	myqq.c	/^static char input[1024];$/;"	v	file:
+intro	qun.h	/^	char		intro[256];$/;"	m	struct:qqqun
+ip	buddy.h	/^	uint 		ip;$/;"	m	struct:qqbuddy
+ip	qqclient.h	/^	char	ip[32];$/;"	m	struct:server_item
+item	config.c	/^typedef config_item item;$/;"	t	file:
+item_count	config.h	/^	int item_count;$/;"	m	struct:cconfig
+item_count	memory.h	/^	int item_count;$/;"	m	struct:mem_detail
+items	config.h	/^	config_item *items[1024];$/;"	m	struct:cconfig
+items	list.h	/^	void**		items;$/;"	m	struct:list
+items	loop.h	/^	void**		items;$/;"	m	struct:loop
+items	memory.h	/^	allocation* items[MAX_ALLOCATION];$/;"	m	struct:mem_detail
+key	qqpacket.h	/^	uchar		key[16];	\/\/key for encrypt or decrypt$/;"	m	struct:qqpacket
+key_type	qqpacket.h	/^	char		key_type;$/;"	m	struct:qqpacket
+last_login_ip	qqclient.h	/^	uint		last_login_ip;$/;"	m	struct:qqclient
+last_login_time	qqclient.h	/^	uint		last_login_time;$/;"	m	struct:qqclient
+last_server_ip	qqclient.c	/^static uint last_server_ip = 0, last_server_port = 0;	\/\/for quick login$/;"	v	file:
+last_server_port	qqclient.c	/^static uint last_server_ip = 0, last_server_port = 0;	\/\/for quick login$/;"	v	file:
+len	qqdef.h	/^	short	len;$/;"	m	struct:token
+len	qqpacket.h	/^	int len;$/;"	m	struct:bytebuffer
+level	qqclient.h	/^	ushort		level;$/;"	m	struct:qqclient
+list	list.h	/^typedef struct list{$/;"	s
+list	list.h	/^}list;$/;"	t	typeref:struct:list
+list_append	list.c	/^int list_append( list* l, void* data )$/;"	f
+list_cleanup	list.c	/^void list_cleanup( list* l )$/;"	f
+list_create	list.c	/^int list_create( list* l, int size )$/;"	f
+list_remove	list.c	/^int list_remove( list* l, void* data )$/;"	f
+list_search	list.c	/^void* list_search( list* l, void* v, search_func search )$/;"	f
+list_sort	list.c	/^void list_sort( list* l, comp_func comp )$/;"	f
+local_ip	qqclient.h	/^	uint		local_ip;$/;"	m	struct:qqclient
+local_port	qqclient.h	/^	ushort		local_port;$/;"	m	struct:qqclient
+locale	protocol.h	/^	uchar		locale[6];$/;"	m	struct:qqdata_2009
+log_day	debug.c	/^static int dbg_term = 0, dbg_file = 0, log_day = 0;$/;"	v	file:
+log_packet	qqclient.h	/^	char		log_packet;$/;"	m	struct:qqclient
+log_terminal	qqclient.h	/^	char		log_terminal;$/;"	m	struct:qqclient
+login_finish	qqclient.h	/^	char		login_finish;$/;"	m	struct:qqclient
+login_info_data	protocol.h	/^	token		login_info_data;$/;"	m	struct:qqdata_2009
+login_info_key1	protocol.h	/^	uchar		login_info_key1[16];$/;"	m	struct:qqdata_2009
+login_info_key2	protocol.h	/^	uchar		login_info_key2[16];$/;"	m	struct:qqdata_2009
+login_info_large	protocol.h	/^	token		login_info_large;$/;"	m	struct:qqdata_2009
+login_info_magic	protocol.h	/^	token		login_info_magic;$/;"	m	struct:qqdata_2009
+login_info_token	protocol.h	/^	token		login_info_token;$/;"	m	struct:qqdata_2009
+login_info_unknown1	protocol.h	/^	uint		login_info_unknown1;$/;"	m	struct:qqdata_2009
+login_info_unknown2	protocol.h	/^	uint		login_info_unknown2;$/;"	m	struct:qqdata_2009
+login_list_count	protocol.h	/^	uchar		login_list_count;	\/\/used for getting list$/;"	m	struct:qqdata_2009
+login_time	qqclient.h	/^	uint		login_time;$/;"	m	struct:qqclient
+login_token	protocol.h	/^	token		login_token;$/;"	m	struct:qqdata_2009
+loop	loop.h	/^typedef struct loop{$/;"	s
+loop	loop.h	/^}loop;$/;"	t	typeref:struct:loop
+loop_cleanup	loop.c	/^void loop_cleanup( loop* l )$/;"	f
+loop_create	loop.c	/^int loop_create( loop* l, int size, loop_delete_func del )$/;"	f
+loop_delete_func	loop.h	/^typedef void (*loop_delete_func)(const void *);$/;"	t
+loop_is_empty	loop.c	/^int loop_is_empty( loop* l )$/;"	f
+loop_pop_from_head	loop.c	/^void* loop_pop_from_head( loop* l )$/;"	f
+loop_pop_from_tail	loop.c	/^void* loop_pop_from_tail( loop* l )$/;"	f
+loop_push_to_head	loop.c	/^int loop_push_to_head( loop* l, void* data )$/;"	f
+loop_push_to_tail	loop.c	/^int loop_push_to_tail( loop* l, void* data )$/;"	f
+loop_remove	loop.c	/^void loop_remove( loop* l, void* data )$/;"	f
+loop_search	loop.c	/^void* loop_search( loop* l, void* v, loop_search_func search )$/;"	f
+loop_search_func	loop.h	/^typedef int (*loop_search_func)(const void *, const void *);$/;"	t
+main	md5.c	/^main()$/;"	f
+main	myqq.c	/^int main(int argc, char** argv)$/;"	f
+match	qqpacket.h	/^	struct qqpacket* match;$/;"	m	struct:qqpacket	typeref:struct:qqpacket::qqpacket
+match_packet	packetmgr.c	/^static qqpacket* match_packet( qqpacketmgr* mgr, qqpacket* p )$/;"	f	file:
+match_searcher	packetmgr.c	/^static int match_searcher( const void* p, const void* v )$/;"	f	file:
+max_member	qun.h	/^	ushort		max_member;$/;"	m	struct:qqqun
+md5_INCLUDED	md5.h	43;"	d
+md5_append	md5.c	/^md5_append(md5_state_t *pms, const md5_byte_t *data, int nbytes)$/;"	f
+md5_byte_t	md5.h	/^typedef unsigned char md5_byte_t; \/* 8-bit byte *\/$/;"	t
+md5_finish	md5.c	/^md5_finish(md5_state_t *pms, md5_byte_t digest[16])$/;"	f
+md5_init	md5.c	/^md5_init(md5_state_t *pms)$/;"	f
+md5_pass1	qqclient.h	/^	uchar		md5_pass1[16];$/;"	m	struct:qqclient
+md5_pass2	qqclient.h	/^	uchar		md5_pass2[16];$/;"	m	struct:qqclient
+md5_process	md5.c	/^md5_process(md5_state_t *pms, const md5_byte_t *data \/*[64]*\/)$/;"	f	file:
+md5_state_s	md5.h	/^typedef struct md5_state_s {$/;"	s
+md5_state_t	md5.h	/^} md5_state_t;$/;"	t	typeref:struct:md5_state_s
+md5_word_t	md5.h	/^typedef unsigned int md5_word_t; \/* 32-bit word *\/$/;"	t
+mem_detail	memory.h	/^typedef struct mem_detail{$/;"	s
+mem_detail	memory.h	/^}mem_detail;$/;"	t	typeref:struct:mem_detail
+member_list	qun.h	/^	list		member_list;$/;"	m	struct:qqqun
+member_searcher	qun.c	/^static int member_searcher( const void* p, const void* v )$/;"	f	file:
+memberoff_searcher	qun.c	/^static int memberoff_searcher( const void* p, const void* v )$/;"	f	file:
+memo	memory.h	/^	char	memo[MEMO_LEN];$/;"	m	struct:allocation
+memory_delete	memory.c	/^void memory_delete( void* p )$/;"	f
+memory_end	memory.c	/^void memory_end(){$/;"	f
+memory_init	memory.c	/^void memory_init()$/;"	f
+memory_new	memory.c	/^void memory_new( void** p, int size, char* memo )$/;"	f
+memory_new_detail	memory.c	/^void memory_new_detail( void** p, int size, char* file, char* function, int line, char* name )$/;"	f
+memory_print	memory.c	/^void memory_print(){$/;"	f
+mid_value	util.c	/^char* mid_value( char* str, char* left, char* right, char* out, int outlen )$/;"	f
+mkdir_recursive	util.c	/^int mkdir_recursive( char* path )$/;"	f
+mode	qqclient.h	/^	char		mode;$/;"	m	struct:qqclient
+mode_string	myqq.c	/^static char* mode_string( int mode )$/;"	f	file:
+msg_content	qqdef.h	/^	char	msg_content[MSG_CONTENT_LEN];$/;"	m	struct:qqmessage
+msg_id	qqdef.h	/^	ushort	msg_id;$/;"	m	struct:qqmessage
+msg_loop	qqclient.h	/^	loop		msg_loop;$/;"	m	struct:qqclient
+msg_seq	qqdef.h	/^	ushort	msg_seq;$/;"	m	struct:qqmessage
+msg_time	qqdef.h	/^	uint	msg_time;$/;"	m	struct:qqmessage
+msg_type	qqdef.h	/^	uchar	msg_type;$/;"	m	struct:qqmessage
+msleep	util.c	/^void msleep( unsigned int ms )$/;"	f
+mutex	list.h	/^	pthread_mutex_t	mutex;$/;"	m	struct:list
+mutex	loop.h	/^	pthread_mutex_t	mutex;$/;"	m	struct:loop
+mutex_event	qqclient.h	/^	pthread_mutex_t	mutex_event;$/;"	m	struct:qqclient
+mutex_mem	memory.h	/^	pthread_mutex_t	mutex_mem;$/;"	m	struct:mem_detail
+myqq_get_buddy_info	myqq.c	/^static int myqq_get_buddy_info( qqclient* qq, uint uid, char* buf, int size )$/;"	f	file:
+myqq_get_buddy_list	myqq.c	/^static int myqq_get_buddy_list( qqclient* qq, char* buf, int size, char online )$/;"	f	file:
+myqq_get_buddy_name	myqq.c	/^static char* myqq_get_buddy_name( qqclient* qq, uint uid )$/;"	f	file:
+myqq_get_qun_info	myqq.c	/^static int myqq_get_qun_info( qqclient* qq, uint int_uid, char* buf, int size )$/;"	f	file:
+myqq_get_qun_list	myqq.c	/^static int myqq_get_qun_list( qqclient* qq, char* buf, int size )$/;"	f	file:
+myqq_get_qun_member_list	myqq.c	/^static int myqq_get_qun_member_list( qqclient* qq, uint int_uid, char* buf, int size, char online )$/;"	f	file:
+myqq_get_qun_member_name	myqq.c	/^static char* myqq_get_qun_member_name( qqclient* qq, uint int_uid, uint uid )$/;"	f	file:
+myqq_get_qun_name	myqq.c	/^static char* myqq_get_qun_name( qqclient* qq, uint uid )$/;"	f	file:
+myqq_send_im_to_buddy	myqq.c	/^static int myqq_send_im_to_buddy( qqclient* qq, uint int_uid, char* msg, int wait )$/;"	f	file:
+myqq_send_im_to_qun	myqq.c	/^static int myqq_send_im_to_qun( qqclient* qq, uint int_uid, char* msg, int wait )$/;"	f	file:
+name	config.h	/^	char name[CONFIG_NAME_LEN];$/;"	m	struct:config_item
+name	group.h	/^	char		name[GROUPNAME_LEN];$/;"	m	struct:qqgroup
+name	qun.h	/^	char		name[NICKNAME_LEN];$/;"	m	struct:qqqun
+need_ack	qqpacket.h	/^	char		need_ack;$/;"	m	struct:qqpacket
+need_reset	myqq.c	/^static int need_reset;$/;"	v	file:
+netaddr_set	qqsocket.c	/^void netaddr_set( char* name, struct sockaddr_in* addr )$/;"	f
+network	qqclient.h	/^	char		network;	\/\/TCP or UDP$/;"	m	struct:qqclient
+nickname	buddy.h	/^	char 		nickname[NICKNAME_LEN];$/;"	m	struct:qqbuddy
+nickname	qun.h	/^	char 		nickname[NICKNAME_LEN];$/;"	m	struct:qunmember
+number	buddy.h	/^	uint 		number;$/;"	m	struct:qqbuddy
+number	group.h	/^	uint 		number;		\/\/internal number$/;"	m	struct:qqgroup
+number	qqclient.h	/^	uint		number;$/;"	m	struct:qqclient
+number	qun.h	/^	uint 		number;		\/\/internal number$/;"	m	struct:qqqun
+number	qun.h	/^	uint 		number;$/;"	m	struct:qunmember
+online_clock	qqclient.h	/^	uint		online_clock;$/;"	m	struct:qqclient
+operating_number	protocol.h	/^	uint		operating_number;$/;"	m	struct:qqdata_2009
+operation	protocol.h	/^	uchar		operation;	\/\/当前操作$/;"	m	struct:qqdata_2009
+order	qun.h	/^	uint		order;$/;"	m	struct:qqqun
+org	qun.h	/^	uchar		role, org;$/;"	m	struct:qunmember
+owner	qun.h	/^	uint		owner;$/;"	m	struct:qqqun
+packetmgr	qqclient.h	/^	qqpacketmgr	packetmgr;$/;"	m	struct:qqclient
+packetmgr_check_packet	packetmgr.c	/^int packetmgr_check_packet( struct qqclient* qq, int timeout )$/;"	f
+packetmgr_del_packet	packetmgr.c	/^void packetmgr_del_packet( qqpacketmgr* mgr, qqpacket* p )$/;"	f
+packetmgr_end	packetmgr.c	/^void packetmgr_end( qqclient* qq )$/;"	f
+packetmgr_inc_seqno	packetmgr.c	/^void packetmgr_inc_seqno( qqclient* qq )$/;"	f
+packetmgr_new_packet	packetmgr.c	/^qqpacket* packetmgr_new_packet( qqclient* qq )$/;"	f
+packetmgr_new_send	packetmgr.c	/^qqpacket* packetmgr_new_send( qqclient* qq, int cmd )$/;"	f
+packetmgr_new_seqno	packetmgr.c	/^void packetmgr_new_seqno( qqclient* qq )$/;"	f
+packetmgr_put	packetmgr.c	/^int packetmgr_put( qqclient* qq, qqpacket* p )$/;"	f
+packetmgr_put_urge	packetmgr.c	/^int packetmgr_put_urge( qqclient* qq, qqpacket* p, int urge )$/;"	f
+packetmgr_recv	packetmgr.c	/^void* packetmgr_recv( void* data )$/;"	f
+packetmgr_start	packetmgr.c	/^int packetmgr_start( qqclient* qq )$/;"	f
+parse	config.c	/^static void parse( config*conf, char* buf, int len )$/;"	f	file:
+parse_memberinfo	prot_qun.c	/^static void parse_memberinfo( struct qqclient* qq, qqpacket* p, qqqun* q )$/;"	f	file:
+parse_membername	prot_qun.c	/^static void parse_membername( struct qqclient* qq, qqpacket* p, qqqun* q )$/;"	f	file:
+parse_message_09	prot_im.c	/^static void parse_message_09( qqpacket* p, qqmessage* msg, char* tmp, int outlen )$/;"	f	file:
+parse_online	prot_qun.c	/^static void parse_online( struct qqclient* qq, qqpacket* p, qqqun* q )$/;"	f	file:
+parse_quninfo	prot_qun.c	/^static void parse_quninfo( struct qqclient* qq, qqpacket* p, qqqun* q )$/;"	f	file:
+password	qqclient.h	/^	char		password[32];$/;"	m	struct:qqclient
+pointer	memory.h	/^	void*	pointer;$/;"	m	struct:allocation
+port	buddy.h	/^	ushort 		port;$/;"	m	struct:qqbuddy
+port	qqclient.h	/^	ushort	port;$/;"	m	struct:server_item
+pos	qqpacket.h	/^	int pos;$/;"	m	struct:bytebuffer
+post_packet	protocol.c	/^int post_packet( struct qqclient* qq, qqpacket* p, int key_type )$/;"	f
+print_buf	myqq.c	/^static char* qun_buf, *buddy_buf, *print_buf;$/;"	v	file:
+print_error	debug.c	/^void print_error(char* file, char* function, int line, const char *fmt, ...)$/;"	f
+process	qqclient.h	/^	int			process;$/;"	m	struct:qqclient
+process_buddy_im	prot_im.c	/^static void process_buddy_im( struct qqclient* qq, qqpacket* p, qqmessage* msg )$/;"	f	file:
+process_buddy_im_text	prot_im.c	/^static void process_buddy_im_text( struct qqclient* qq, qqpacket* p, qqmessage* msg )$/;"	f	file:
+process_packet	protocol.c	/^int process_packet( qqclient* qq, qqpacket* p, bytebuffer* buf )$/;"	f
+process_qun_im	prot_im.c	/^static void process_qun_im( struct qqclient* qq, qqpacket* p, qqmessage* msg )$/;"	f	file:
+process_qun_member_im	prot_im.c	/^static void process_qun_member_im( struct qqclient* qq, qqpacket* p, qqmessage* msg )$/;"	f	file:
+process_sys_im	prot_im.c	/^static void process_sys_im( struct qqclient* qq, qqpacket* p, qqmessage* msg )$/;"	f	file:
+prot_buddy_del_buddy	prot_buddy.c	/^void prot_buddy_del_buddy( struct qqclient* qq, uint number )$/;"	f
+prot_buddy_del_buddy_reply	prot_buddy.c	/^void prot_buddy_del_buddy_reply( struct qqclient* qq, qqpacket* p )$/;"	f
+prot_buddy_request_addbuddy	prot_buddy.c	/^void prot_buddy_request_addbuddy( struct qqclient* qq, uint number )$/;"	f
+prot_buddy_request_addbuddy_reply	prot_buddy.c	/^void prot_buddy_request_addbuddy_reply( struct qqclient* qq, qqpacket* p )$/;"	f
+prot_buddy_status	prot_buddy.c	/^void prot_buddy_status( struct qqclient* qq, qqpacket* p )$/;"	f
+prot_buddy_update_account	prot_buddy.c	/^void prot_buddy_update_account( struct qqclient* qq, uint pos )$/;"	f
+prot_buddy_update_account_reply	prot_buddy.c	/^void prot_buddy_update_account_reply( struct qqclient* qq, qqpacket* p )$/;"	f
+prot_buddy_update_alias	prot_buddy.c	/^void prot_buddy_update_alias( struct qqclient* qq )$/;"	f
+prot_buddy_update_alias_reply	prot_buddy.c	/^void prot_buddy_update_alias_reply( struct qqclient* qq, qqpacket* p )$/;"	f
+prot_buddy_update_list	prot_buddy.c	/^void prot_buddy_update_list( struct qqclient* qq, ushort pos )$/;"	f
+prot_buddy_update_list_reply	prot_buddy.c	/^void prot_buddy_update_list_reply( struct qqclient* qq, qqpacket* p )$/;"	f
+prot_buddy_update_online	prot_buddy.c	/^void prot_buddy_update_online( struct qqclient* qq, uint next_number )$/;"	f
+prot_buddy_update_online_reply	prot_buddy.c	/^void prot_buddy_update_online_reply( struct qqclient* qq, qqpacket* p )$/;"	f
+prot_buddy_update_signiture	prot_buddy.c	/^void prot_buddy_update_signiture( struct qqclient* qq, uint pos )$/;"	f
+prot_buddy_update_signiture_reply	prot_buddy.c	/^void prot_buddy_update_signiture_reply( struct qqclient* qq, qqpacket* p )$/;"	f
+prot_buddy_verify_addbuddy	prot_buddy.c	/^void prot_buddy_verify_addbuddy( struct qqclient* qq, uchar cmd, uint number )$/;"	f
+prot_buddy_verify_addbuddy_reply	prot_buddy.c	/^void prot_buddy_verify_addbuddy_reply( struct qqclient* qq, qqpacket* p )$/;"	f
+prot_group_download_labels	prot_group.c	/^void prot_group_download_labels( struct qqclient* qq, uint pos )$/;"	f
+prot_group_download_labels_reply	prot_group.c	/^void prot_group_download_labels_reply( struct qqclient* qq, qqpacket* p )$/;"	f
+prot_im_ack_recv	prot_im.c	/^void prot_im_ack_recv( struct qqclient* qq, qqpacket* pre )$/;"	f
+prot_im_recv_msg	prot_im.c	/^void prot_im_recv_msg( struct qqclient* qq, qqpacket* p )$/;"	f
+prot_im_send_msg	prot_im.c	/^void prot_im_send_msg( struct qqclient* qq, uint to, char* msg )$/;"	f
+prot_login_get_info	prot_login.c	/^void prot_login_get_info( struct qqclient* qq )$/;"	f
+prot_login_get_info_reply	prot_login.c	/^void prot_login_get_info_reply( struct qqclient* qq, qqpacket* p )$/;"	f
+prot_login_get_list	prot_login.c	/^void prot_login_get_list( struct qqclient* qq, ushort pos )$/;"	f
+prot_login_get_list_reply	prot_login.c	/^void prot_login_get_list_reply( struct qqclient* qq, qqpacket* p )$/;"	f
+prot_login_logout	prot_login.c	/^void prot_login_logout( struct qqclient* qq )$/;"	f
+prot_login_request	prot_login.c	/^void prot_login_request( struct qqclient* qq, token* tok, uint code, char png_data )$/;"	f
+prot_login_request_reply	prot_login.c	/^void prot_login_request_reply( struct qqclient* qq, qqpacket* p )$/;"	f
+prot_login_send_info	prot_login.c	/^void prot_login_send_info( struct qqclient* qq )$/;"	f
+prot_login_send_info_reply	prot_login.c	/^void prot_login_send_info_reply( struct qqclient* qq, qqpacket* p )$/;"	f
+prot_login_touch	prot_login.c	/^void prot_login_touch( struct qqclient* qq )$/;"	f
+prot_login_touch_reply	prot_login.c	/^void prot_login_touch_reply( struct qqclient* qq, qqpacket* p )$/;"	f
+prot_login_touch_with_info	prot_login.c	/^void prot_login_touch_with_info( struct qqclient* qq, uchar* server_data, uchar len )$/;"	f
+prot_login_verify	prot_login.c	/^void prot_login_verify( struct qqclient* qq )$/;"	f
+prot_login_verify_reply	prot_login.c	/^void prot_login_verify_reply( struct qqclient* qq, qqpacket* p )$/;"	f
+prot_misc_broadcast	prot_misc.c	/^void prot_misc_broadcast( struct qqclient* qq, qqpacket* p )$/;"	f
+prot_qun_cmd_reply	prot_qun.c	/^void prot_qun_cmd_reply( struct qqclient* qq, qqpacket* p )$/;"	f
+prot_qun_get_info	prot_qun.c	/^void prot_qun_get_info( struct qqclient* qq, uint number, uint pos )$/;"	f
+prot_qun_get_memberinfo	prot_qun.c	/^void prot_qun_get_memberinfo( struct qqclient* qq, uint number, uint* numbers, int count )$/;"	f
+prot_qun_get_membername	prot_qun.c	/^void prot_qun_get_membername( struct qqclient* qq, uint number )$/;"	f
+prot_qun_get_online	prot_qun.c	/^void prot_qun_get_online( struct qqclient* qq, uint number )$/;"	f
+prot_qun_send_msg	prot_qun.c	/^void prot_qun_send_msg( struct qqclient* qq, uint number, char* msg_content )$/;"	f
+prot_user_change_status	prot_user.c	/^void prot_user_change_status( struct qqclient* qq )$/;"	f
+prot_user_change_status_reply	prot_user.c	/^void prot_user_change_status_reply( struct qqclient* qq, qqpacket* p )$/;"	f
+prot_user_check_ip	prot_user.c	/^void prot_user_check_ip( struct qqclient* qq )$/;"	f
+prot_user_check_ip_reply	prot_user.c	/^void prot_user_check_ip_reply( struct qqclient* qq, qqpacket* p )$/;"	f
+prot_user_get_info	prot_user.c	/^void prot_user_get_info( struct qqclient* qq, uint number )$/;"	f
+prot_user_get_info_reply	prot_user.c	/^void prot_user_get_info_reply( struct qqclient* qq, qqpacket* p )$/;"	f
+prot_user_get_key	prot_user.c	/^void prot_user_get_key( struct qqclient* qq, uchar key )$/;"	f
+prot_user_get_key_reply	prot_user.c	/^void prot_user_get_key_reply( struct qqclient* qq, qqpacket* p )$/;"	f
+prot_user_get_level	prot_user.c	/^void prot_user_get_level( struct qqclient* qq )$/;"	f
+prot_user_get_level_reply	prot_user.c	/^void prot_user_get_level_reply( struct qqclient* qq, qqpacket* p )$/;"	f
+prot_user_get_notice	prot_user.c	/^void prot_user_get_notice( struct qqclient* qq, uchar type )$/;"	f
+prot_user_get_notice_reply	prot_user.c	/^void prot_user_get_notice_reply( struct qqclient* qq, qqpacket* p )$/;"	f
+prot_user_keep_alive	prot_user.c	/^void prot_user_keep_alive( struct qqclient* qq )$/;"	f
+prot_user_keep_alive_reply	prot_user.c	/^void prot_user_keep_alive_reply( struct qqclient* qq, qqpacket* p )$/;"	f
+prot_user_request_token	prot_user.c	/^void prot_user_request_token( struct qqclient* qq, uint number, uchar operation, ushort type, uint code )$/;"	f
+prot_user_request_token_reply	prot_user.c	/^void prot_user_request_token_reply( struct qqclient* qq, qqpacket* p )$/;"	f
+put_byte	qqpacket.c	/^void put_byte( bytebuffer* p, uchar b )$/;"	f
+put_data	qqpacket.c	/^void put_data( bytebuffer* p, uchar* data, int len )$/;"	f
+put_int	qqpacket.c	/^void put_int( bytebuffer* p, uint b )$/;"	f
+put_string	qqpacket.c	/^void put_string( bytebuffer* p, char* str )$/;"	f
+put_word	qqpacket.c	/^void put_word( bytebuffer* p, ushort b )$/;"	f
+qq	myqq.c	/^static qqclient* qq;$/;"	v	file:
+qq	webqq.h	/^	void* qq;$/;"	m	struct:user
+qqbuddy	buddy.h	/^typedef struct qqbuddy{$/;"	s
+qqbuddy	buddy.h	/^}qqbuddy;$/;"	t	typeref:struct:qqbuddy
+qqclient	qqclient.h	/^typedef struct qqclient{$/;"	s
+qqclient	qqclient.h	/^}qqclient;$/;"	t	typeref:struct:qqclient
+qqclient_add	qqclient.c	/^int qqclient_add( qqclient* qq, uint number, char* request_str )$/;"	f
+qqclient_change_status	qqclient.c	/^void qqclient_change_status( qqclient* qq, uchar mode )$/;"	f
+qqclient_cleanup	qqclient.c	/^void qqclient_cleanup( qqclient* qq )$/;"	f
+qqclient_create	qqclient.c	/^int qqclient_create( qqclient* qq, uint num, char* pass )$/;"	f
+qqclient_del	qqclient.c	/^int qqclient_del( qqclient* qq, uint number )$/;"	f
+qqclient_get_event	qqclient.c	/^int qqclient_get_event( qqclient* qq, char* event, int size, int wait )$/;"	f
+qqclient_get_server	qqclient.c	/^void qqclient_get_server(qqclient* qq)$/;"	f
+qqclient_keepalive	qqclient.c	/^static void* qqclient_keepalive( void* data )$/;"	f	file:
+qqclient_login	qqclient.c	/^int qqclient_login( qqclient* qq )$/;"	f
+qqclient_logout	qqclient.c	/^void qqclient_logout( qqclient* qq )$/;"	f
+qqclient_md5_create	qqclient.c	/^int qqclient_md5_create( qqclient* qq, uint num, uchar* md5_pass )$/;"	f
+qqclient_put_event	qqclient.c	/^int qqclient_put_event( qqclient* qq, char* event )$/;"	f
+qqclient_put_message	qqclient.c	/^int qqclient_put_message( qqclient* qq, char* msg )$/;"	f
+qqclient_set_process	qqclient.c	/^void qqclient_set_process( qqclient *qq, int process )$/;"	f
+qqclient_verify	qqclient.c	/^int qqclient_verify( qqclient* qq, uint code )$/;"	f
+qqclient_wait	qqclient.c	/^int qqclient_wait( qqclient* qq, int sec )$/;"	f
+qqdata_2009	protocol.h	/^struct qqdata_2009{$/;"	s
+qqdecrypt	qqcrypt.c	/^int qqdecrypt( unsigned char* instr, int instrlen, unsigned char* key,$/;"	f
+qqencrypt	qqcrypt.c	/^void qqencrypt( unsigned char* instr, int instrlen, unsigned char* key,$/;"	f
+qqgroup	group.h	/^typedef struct qqgroup{$/;"	s
+qqgroup	group.h	/^}qqgroup;$/;"	t	typeref:struct:qqgroup
+qqmessage	qqdef.h	/^typedef struct qqmessage{$/;"	s
+qqmessage	qqdef.h	/^}qqmessage;$/;"	t	typeref:struct:qqmessage
+qqpacket	qqpacket.h	/^typedef struct qqpacket{$/;"	s
+qqpacket	qqpacket.h	/^}qqpacket;$/;"	t	typeref:struct:qqpacket
+qqpacketmgr	packetmgr.h	/^typedef struct qqpacketmgr{$/;"	s
+qqpacketmgr	packetmgr.h	/^}qqpacketmgr;$/;"	t	typeref:struct:qqpacketmgr
+qqqun	qun.h	/^typedef struct qqqun{$/;"	s
+qqqun	qun.h	/^}qqqun;$/;"	t	typeref:struct:qqqun
+qqsession	protocol.h	/^	char		qqsession[128];$/;"	m	struct:qqdata_2009
+qqshow	buddy.h	/^	uchar		qqshow;$/;"	m	struct:qqbuddy
+qqshow	qun.h	/^	uchar		qqshow;$/;"	m	struct:qunmember
+qqsocket_close	qqsocket.c	/^void qqsocket_close( int fd )$/;"	f
+qqsocket_connect	qqsocket.c	/^int qqsocket_connect( int fd, char* ip, ushort port )$/;"	f
+qqsocket_connect2	qqsocket.c	/^int qqsocket_connect2( int fd, uint ip, ushort port )$/;"	f
+qqsocket_create	qqsocket.c	/^int qqsocket_create( int type, char* ip, ushort port )$/;"	f
+qqsocket_end	qqsocket.c	/^void qqsocket_end()$/;"	f
+qqsocket_init	qqsocket.c	/^void qqsocket_init()$/;"	f
+qqsocket_recv	qqsocket.c	/^int qqsocket_recv( int fd, uchar* buf, size_t size )$/;"	f
+qqsocket_send	qqsocket.c	/^int qqsocket_send( int fd, uchar* buf, size_t size )$/;"	f
+qun_buf	myqq.c	/^static char* qun_buf, *buddy_buf, *print_buf;$/;"	v	file:
+qun_ext_searcher	qun.c	/^static int qun_ext_searcher( const void* p, const void* v )$/;"	f	file:
+qun_get	qun.c	/^qqqun* qun_get( struct qqclient* qq, uint number, int create )$/;"	f
+qun_get_by_ext	qun.c	/^qqqun* qun_get_by_ext( struct qqclient* qq, uint ext_number )$/;"	f
+qun_int_uid	myqq.c	/^static uint qun_int_uid;		\/\/internal qun id if entered.$/;"	v	file:
+qun_kill_members	qun.c	/^static int qun_kill_members( const void* p, const void* v )$/;"	f	file:
+qun_list	qqclient.h	/^	list		qun_list;$/;"	m	struct:qqclient
+qun_member_cleanup	qun.c	/^void qun_member_cleanup( struct qqclient* qq )$/;"	f
+qun_member_get	qun.c	/^qunmember* qun_member_get( struct qqclient* qq, qqqun* q, uint number, int create )$/;"	f
+qun_member_remove	qun.c	/^void qun_member_remove( struct qqclient* qq, qqqun* q, uint number )$/;"	f
+qun_msg_callback	myqq.c	/^void qun_msg_callback ( qqclient* qq, uint uid, uint int_uid,$/;"	f
+qun_msg_callback	webqq.c	/^void qun_msg_callback ( qqclient* qq, uint uid, uint int_uid,$/;"	f
+qun_number	qqdef.h	/^	uint	qun_number;$/;"	m	struct:qqmessage
+qun_put_event	qun.c	/^void qun_put_event( qqclient* qq )$/;"	f
+qun_put_single_event	qun.c	/^void qun_put_single_event( qqclient* qq, qqqun* q )$/;"	f
+qun_remove	qun.c	/^void qun_remove( struct qqclient* qq, uint number )$/;"	f
+qun_searcher	qun.c	/^static int qun_searcher( const void* p, const void* v )$/;"	f	file:
+qun_send_message	qun.c	/^int qun_send_message( qqclient* qq, uint number, char* msg )$/;"	f
+qun_set_members_off	qun.c	/^void qun_set_members_off( struct qqclient* qq, qqqun* q )$/;"	f
+qun_update_all	qun.c	/^void qun_update_all( struct qqclient* qq )$/;"	f
+qun_update_info	qun.c	/^void qun_update_info( qqclient* qq, qqqun* q )$/;"	f
+qun_update_memberinfo	qun.c	/^void qun_update_memberinfo( qqclient* qq, qqqun* q )$/;"	f
+qun_update_online	qun.c	/^void qun_update_online( qqclient* qq, qqqun* q )$/;"	f
+qun_update_online_all	qun.c	/^void qun_update_online_all( struct qqclient* qq )$/;"	f
+qun_update_online_searcher	qun.c	/^static int qun_update_online_searcher( const void* p, const void* v )$/;"	f	file:
+qun_update_searcher	qun.c	/^static int qun_update_searcher( const void* p, const void* v )$/;"	f	file:
+qunmember	qun.h	/^typedef struct qunmember{$/;"	s
+qunmember	qun.h	/^}qunmember;$/;"	t	typeref:struct:qunmember
+rand2	prot_login.c	/^static int rand2()$/;"	f	file:
+randkey	prot_login.c	/^static void randkey(uchar* key)$/;"	f	file:
+random	qqcrypt.c	/^static int random(void)$/;"	f	file:
+read_config	qqclient.c	/^static void read_config( qqclient* qq )$/;"	f	file:
+read_password	myqq.c	/^int read_password(char   *lineptr )   $/;"	f
+read_server_addr	qqclient.c	/^static void read_server_addr( server_item* srv, char* s, int* count  )$/;"	f	file:
+ready_loop	packetmgr.h	/^	loop		ready_loop;$/;"	m	struct:qqpacketmgr
+recv_loop	packetmgr.h	/^	loop		recv_loop;$/;"	m	struct:qqpacketmgr
+recv_packets	packetmgr.h	/^	int 		recv_packets;$/;"	m	struct:qqpacketmgr
+reference	webqq.h	/^	int	reference;$/;"	m	struct:user
+repeat_searcher	packetmgr.c	/^static int repeat_searcher( const void* p, const void* v )$/;"	f	file:
+restore_version_data	prot_login.c	/^static void restore_version_data( struct qqclient* qq )$/;"	f	file:
+role	qun.h	/^	uchar		role, org;$/;"	m	struct:qunmember
+search_func	list.h	/^typedef int (*search_func)(const void *, const void *);$/;"	t
+searcher	buddy.c	/^static int searcher( const void* p, const void* v )$/;"	f	file:
+searcher	group.c	/^static int searcher( const void* p, const void* v )$/;"	f	file:
+self	qqclient.h	/^	qqbuddy*	self;$/;"	m	struct:qqclient
+send_times	qqpacket.h	/^	int		send_times;$/;"	m	struct:qqpacket
+sent_loop	packetmgr.h	/^	loop		sent_loop;$/;"	m	struct:qqpacketmgr
+seqno	qqclient.h	/^	ushort		seqno;$/;"	m	struct:qqclient
+seqno	qqpacket.h	/^	ushort		seqno;$/;"	m	struct:qqpacket
+server_data	protocol.h	/^		uchar		server_data[15];$/;"	m	union:qqdata_2009::__anon1
+server_info	protocol.h	/^		}__attribute__((packed)) server_info;$/;"	m	union:qqdata_2009::__anon1	typeref:struct:qqdata_2009::__anon1::__anon2
+server_ip	qqclient.h	/^	uint		server_ip;$/;"	m	struct:qqclient
+server_item	qqclient.h	/^typedef struct server_item{$/;"	s
+server_item	qqclient.h	/^}server_item;$/;"	t	typeref:struct:server_item
+server_port	qqclient.h	/^	ushort		server_port;$/;"	m	struct:qqclient
+server_reverse	protocol.h	/^			uint	server_reverse;$/;"	m	struct:qqdata_2009::__anon1::__anon2
+server_time	qqclient.h	/^	uint		server_time;$/;"	m	struct:qqclient
+session_key	buddy.h	/^	uchar		session_key[16];$/;"	m	struct:qqbuddy
+session_key	protocol.h	/^	uchar		session_key[16];$/;"	m	struct:qqdata_2009
+session_ptr	webqq.h	/^	void*	session_ptr;	\/\/identical$/;"	m	struct:user
+setcolor	myqq.c	/^static void setcolor( const char* col )$/;"	f	file:
+setcolor	myqq.c	/^static void setcolor( int col )$/;"	f	file:
+sex	buddy.h	/^	uchar		sex;$/;"	m	struct:qqbuddy
+sex	qun.h	/^	uchar		sex;$/;"	m	struct:qunmember
+sign_time	buddy.h	/^	uint		sign_time;$/;"	m	struct:qqbuddy
+signiture	buddy.h	/^	char		signiture[1];$/;"	m	struct:qqbuddy
+signiture	buddy.h	/^	char		signiture[SIGNITURE_LEN];$/;"	m	struct:qqbuddy
+size	list.h	/^	int		size;$/;"	m	struct:list
+size	loop.h	/^	int		size;$/;"	m	struct:loop
+size	memory.h	/^	int	size;$/;"	m	struct:allocation
+size	qqpacket.h	/^	int size;$/;"	m	struct:bytebuffer
+skip_line	myqq.c	/^static char* skip_line( char* p, int ln )$/;"	f	file:
+slice_count	qqdef.h	/^	char	slice_count;$/;"	m	struct:qqmessage
+slice_no	qqdef.h	/^	char	slice_no;$/;"	m	struct:qqmessage
+socket	qqclient.h	/^	int			socket;$/;"	m	struct:qqclient
+status	buddy.h	/^	uchar		status;$/;"	m	struct:qqbuddy
+status	qun.h	/^	uchar		status;$/;"	m	struct:qunmember
+str	loop.h	/^	char		str[5];$/;"	m	struct:loop
+stricmp	config.c	25;"	d	file:
+stricmp	qqdef.h	24;"	d
+tail	loop.h	/^	int		tail;$/;"	m	struct:loop
+tail	qqpacket.h	/^	char		tail;$/;"	m	struct:qqpacket
+tcp_server_count	qqclient.c	/^static int tcp_server_count = 0, udp_server_count = 0;$/;"	v	file:
+tcp_servers	qqclient.c	/^static server_item tcp_servers[MAX_SERVER_ADDR];$/;"	v	file:
+temp_loop	packetmgr.h	/^	loop		temp_loop;$/;"	m	struct:qqpacketmgr
+thread_guarder	webqq.c	/^static pthread_t thread_guarder;$/;"	v	file:
+thread_keepalive	qqclient.h	/^	pthread_t	thread_keepalive;$/;"	m	struct:qqclient
+thread_recv	packetmgr.h	/^	pthread_t 	thread_recv;$/;"	m	struct:qqpacketmgr
+time_alive	qqpacket.h	/^	time_t		time_alive;	\/\/send or recv$/;"	m	struct:qqpacket
+time_alloc	memory.h	/^	time_t	time_alloc;$/;"	m	struct:allocation
+time_create	qqpacket.h	/^	time_t		time_create;$/;"	m	struct:qqpacket
+timeout_searcher	packetmgr.c	/^static int timeout_searcher( const void* p, const void* v )$/;"	f	file:
+to_gb_force	myqq.c	/^static char* to_gb_force( char* s )$/;"	f	file:
+to_uid	myqq.c	/^static uint to_uid = 0;		\/\/send message to that guy.$/;"	v	file:
+to_utf8	myqq.c	/^static char* to_utf8( char* s )$/;"	f	file:
+token	qqdef.h	/^typedef struct token{$/;"	s
+token	qqdef.h	/^}token;$/;"	t	typeref:struct:token
+token_c	protocol.h	/^	token		token_c;$/;"	m	struct:qqdata_2009
+token_cmd	qun.h	/^	token		token_cmd;$/;"	m	struct:qqqun
+trans_faces	util.c	/^int trans_faces( char* src, char* dst, int outlen )$/;"	f
+type	qun.h	/^	uchar		type;	\/\/qun type$/;"	m	struct:qqqun
+uchar	qqdef.h	/^typedef unsigned char uchar;$/;"	t
+udp_server_count	qqclient.c	/^static int tcp_server_count = 0, udp_server_count = 0;$/;"	v	file:
+udp_servers	qqclient.c	/^static server_item udp_servers[MAX_SERVER_ADDR];$/;"	v	file:
+uint	qqdef.h	/^typedef unsigned int uint;$/;"	t
+update_time	webqq.h	/^	time_t	update_time;	\/\/if now-update_time$/;"	m	struct:user
+upgrade_days	qqclient.h	/^	ushort		upgrade_days;$/;"	m	struct:qqclient
+user	webqq.h	/^typedef struct user{$/;"	s
+user	webqq.h	/^}user;$/;"	t	typeref:struct:user
+user_loop	webqq.c	/^static loop user_loop;$/;"	v	file:
+user_token	protocol.h	/^	token		user_token;$/;"	m	struct:qqdata_2009
+user_token_time	protocol.h	/^	time_t		user_token_time;$/;"	m	struct:qqdata_2009
+ushort	qqdef.h	/^typedef unsigned short ushort;$/;"	t
+utf8_to_gb	utf8.c	/^void utf8_to_gb ( char* src, char* dst, int len )$/;"	f
+utf8_to_gb	utf8.c	/^void utf8_to_gb( char* src, char* dst, int len )$/;"	f
+util_escape	myqq.c	/^static char* util_escape( char* str )$/;"	f	file:
+value	config.h	/^	char value[CONFIG_VALUE_LEN];$/;"	m	struct:config_item
+verify_dir	qqclient.h	/^	char		verify_dir[PATH_LEN];$/;"	m	struct:qqclient
+verify_flag	buddy.h	/^	uchar		verify_flag;	\/\/00 允许 01 验证 02 拒绝 03 问题$/;"	m	struct:qqbuddy
+verify_key1	protocol.h	/^	uchar		verify_key1[16];$/;"	m	struct:qqdata_2009
+verify_key2	protocol.h	/^	uchar		verify_key2[16];$/;"	m	struct:qqdata_2009
+verify_token	protocol.h	/^	token		verify_token;$/;"	m	struct:qqdata_2009
+version	buddy.h	/^	ushort		version;$/;"	m	struct:qqbuddy
+version	qqclient.h	/^	ushort		version;$/;"	m	struct:qqclient
+version	qqpacket.h	/^	ushort		version;$/;"	m	struct:qqpacket
+version_spec	protocol.h	/^	uchar		version_spec[12];$/;"	m	struct:qqdata_2009
+w_redirect_count	protocol.h	/^			ushort	w_redirect_count;$/;"	m	struct:qqdata_2009::__anon1::__anon2
+webqq_create_user	webqq.c	/^EXPORT user* webqq_create_user( void* session_ptr, uint number, uchar* md5pass )$/;"	f
+webqq_derefer	webqq.c	/^EXPORT void webqq_derefer( user* u )$/;"	f
+webqq_end	webqq.c	/^EXPORT void webqq_end()$/;"	f
+webqq_get_number	webqq.c	/^EXPORT uint webqq_get_number( user* u )$/;"	f
+webqq_get_user	webqq.c	/^EXPORT user* webqq_get_user( void* session_ptr )$/;"	f
+webqq_guarder	webqq.c	/^static void* webqq_guarder( void* data )$/;"	f	file:
+webqq_init	webqq.c	/^EXPORT void webqq_init()$/;"	f
+webqq_login	webqq.c	/^EXPORT int webqq_login( user* u )$/;"	f
+webqq_logout	webqq.c	/^EXPORT int webqq_logout( user* u )$/;"	f
+webqq_recv_msg	webqq.c	/^EXPORT int webqq_recv_msg( user* u, char* buf, int size, int wait )$/;"	f
+webqq_remove	webqq.c	/^EXPORT void webqq_remove( user* u )$/;"	f
+webqq_running	webqq.c	/^static int webqq_running = 0;$/;"	v	file:
+webqq_send_msg	webqq.c	/^EXPORT int webqq_send_msg( user* u, uint to, char* buf, char qun_msg )$/;"	f
+webqq_status	webqq.c	/^EXPORT void webqq_status( user* u, int st )$/;"	f
+webqq_update_list	webqq.c	/^EXPORT void webqq_update_list( user* u )$/;"	f
+webqq_verify	webqq.c	/^EXPORT void webqq_verify( user* u, uint code )$/;"	f
+wsa_data	qqsocket.c	/^static WSADATA wsa_data;$/;"	v	file:
