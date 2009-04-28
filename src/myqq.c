@@ -18,6 +18,7 @@
  *               
  */
 
+//#define USERNAME 1147071944
 
 #include <stdio.h>
 #include <ctype.h>
@@ -567,10 +568,11 @@ int main(int argc, char** argv)
 	//login
 lab:if( argc<3 )
 	{
-		uint uid=1147071944;
+        //uint uid=USERNAME;
+		uint uid;
 		char password[32];
-        //MSG("%s",_TEXT("QQ账号:"));
-        //scanf("%u", &uid );
+        MSG("%s",_TEXT("QQ账号:"));
+        scanf("%u", &uid );
 		MSG("%s",_TEXT("QQ密码:"));
 #ifdef __WIN32__
 		uint pwi;
@@ -611,6 +613,11 @@ lab:if( argc<3 )
 	while( qq->process == P_LOGGING )
 		qqclient_wait( qq, 1 );
 	while( qq->process == P_VERIFYING ){
+        char command[20];
+        strcpy("eog ",command);
+        strcpy("./verify/*.png",command);
+        //strcpy()
+        system(command);    //自动调出验证码图片
 		MSG("%s",_TEXT("请输入验证码（验证码目录下）: "));
 		scanf( "%s", input );
 		qqclient_verify( qq, *(uint*)input );
