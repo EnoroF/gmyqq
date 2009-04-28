@@ -21,3 +21,25 @@
 14:53:36 [src/prot_buddy.c]prot_buddy_update_account(233): account finished.
 14:53:47 [src/qqclient.c]qqclient_logout(300): joining keepalive
 14:53:47 [src/qqclient.c]qqclient_keepalive(196): end.
+15:09:05 [src/qqclient.c]qqclient_login(256): login
+15:09:05 [src/qqclient.c]connect_server(217): connecting to 219.133.60.36:8000
+15:09:05 [src/qqclient.c]qqclient_keepalive(157): keepalive
+15:09:06 [src/prot_login.c]prot_login_touch_reply(111): redirecting to 119.147.18.37
+15:09:06 [src/qqclient.c]connect_server(217): connecting to 119.147.18.37:8000
+15:09:06 [src/prot_login.c]prot_login_touch_reply(111): redirecting to 58.251.149.231
+15:09:06 [src/qqclient.c]connect_server(217): connecting to 58.251.149.231:8000
+15:09:07 [src/prot_login.c]prot_login_request_reply(204): process verify password
+15:09:07 [src/prot_login.c]prot_login_get_info_reply(343): Hello, amoblin
+15:09:07 [src/prot_login.c]prot_login_send_info_reply(475): session key: 
+39 47 66 36 69 79 39 34 6a 51 41 6a 65 64 52 42 
+15:09:07 [src/prot_login.c]prot_login_send_info_reply(501): last login time: Fri Apr 24 14:53:34 2009
+
+15:09:08 [src/prot_user.c]prot_user_change_status_reply(130): change status to 40
+15:09:08 [src/prot_user.c]prot_user_get_level_reply(323): level: 0  active_days: 0  upgrade_days: 5
+15:09:08 [src/qqpacket.c]get_int(102): packet p->pos(1)+3 >= p->len(2)
+15:09:08 [src/qqpacket.c]get_word(91): packet p->pos(2)+1 >= p->len(2)
+15:09:08 [src/prot_buddy.c]prot_buddy_update_list_reply(66): buddy_count: 2
+15:09:09 [src/prot_buddy.c]prot_buddy_update_signiture(161): signiture finished.
+15:09:09 [src/prot_buddy.c]prot_buddy_update_account(233): account finished.
+15:27:15 [src/qqclient.c]qqclient_logout(300): joining keepalive
+15:27:15 [src/qqclient.c]qqclient_keepalive(196): end.
