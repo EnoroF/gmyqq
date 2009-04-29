@@ -25,7 +25,7 @@ int list_create( list* l, int size )
 	l->size = size;
 	l->count = 0;
 	pthread_mutex_init( &l->mutex, NULL );
-	NEW( l->items, l->size*sizeof(void*) );
+	NEW( l->items, l->size*sizeof(void*) ,void*);
 	assert( l->items );
 	return 0;
 }

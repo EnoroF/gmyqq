@@ -42,13 +42,14 @@ static void delete_func(const void *p)
 qqpacket* packetmgr_new_packet( qqclient* qq )
 {
 	qqpacket* p;
-	NEW( p, sizeof(qqpacket) );
+	//NEW( p, sizeof(qqpacket) );
+	NEW( p, sizeof(qqpacket) ,qqpacket);
 	if( !p ){
 		DBG("Error: No enough memory.");
 		return NULL;
 	}
 	p->time_create = p->time_alive = time( NULL );
-	NEW( p->buf, sizeof(bytebuffer) );
+	NEW( p->buf, sizeof(bytebuffer) ,bytebuffer);
 	if( !p->buf ){
 		DBG("Error: No enough memory.");
 		return NULL;
@@ -105,7 +106,7 @@ static void check_ready_packets( qqclient* qq )
 	//if tcp, we send one by one, otherwise send them all
 	if( loop_is_empty(&mgr->sent_loop) )	//good luck, get a packet and send it.
 	{
-		qqpacket* p = loop_pop_from_head( &mgr->ready_loop );
+		qqpacket* p =(qqpacket *) loop_pop_from_head( &mgr->ready_loop );
 		if( p && p->buf ){
 			//remove p from ready packets
 			if( p->head!=0x02 || p->tail !=0x03 ){
@@ -166,7 +167,7 @@ static int match_searcher( const void* p, const void* v )
 static qqpacket* match_packet( qqpacketmgr* mgr, qqpacket* p )
 {
 	qqpacket* m;
-	m = loop_search( &mgr->sent_loop, (void*)p, match_searcher );
+	m =(qqpacket *) loop_search( &mgr->sent_loop, (void*)p, match_searcher );
 	return m;
 }
 
@@ -180,7 +181,7 @@ int handle_packet( qqclient* qq, qqpacket* p, uchar* data, int len )
 	qqpacketmgr* mgr = &qq->packetmgr;
 	mgr->recv_packets ++;
 	bytebuffer* buf;
-	NEW( buf, sizeof( bytebuffer ) );
+	NEW( buf, sizeof( bytebuffer ) ,bytebuffer);
 	if( !buf ){
 		DBG("Error: no enough memory to allocate buf.");
 		return -99;
@@ -214,7 +215,7 @@ int handle_packet( qqclient* qq, qqpacket* p, uchar* data, int len )
 		//deal with the packet
 		process_packet( qq, p, buf );
 		qqpacket* t;
-		while( (t = loop_pop_from_tail( &mgr->temp_loop )) ){
+		while( (t =(qqpacket *) loop_pop_from_tail( &mgr->temp_loop )) ){
 			loop_push_to_head( &mgr->ready_loop, t );
 		}
 		if( p->match ){
@@ -238,7 +239,7 @@ void* packetmgr_recv( void* data )
 	qqpacketmgr* mgr = &qq->packetmgr;
 	uchar* recv_buf;
 	int pos;
-	NEW( recv_buf, PACKET_SIZE );
+	NEW( recv_buf, PACKET_SIZE ,uchar);
 	p = packetmgr_new_packet( qq );
 	if( !p || !recv_buf ){
 		DBG("Error: p=%x  buf=%x", p, recv_buf );
@@ -330,7 +331,7 @@ int packetmgr_check_packet( struct qqclient* qq, int timeout )
 	time_t timeout_time = time(NULL) - timeout;
 	//when locked, cannot recv packet till unlock.
 	do{
-		p = loop_search( &mgr->sent_loop, (void*)timeout_time, timeout_searcher );
+		p = (qqpacket *)loop_search( &mgr->sent_loop, (void*)timeout_time, timeout_searcher );
 		if( p ){
 			loop_remove( &mgr->sent_loop, p );
 		}

@@ -1,3 +1,15 @@
+r6
+	1.upload a bzip file.
+	2.modify TODO
+	3.use g++ instead of gcc
+	4.add gmyqq.cc,gmyqq.h and main.cc file
+	5.can't compile successfully....
+	6.add ui logo with gmyqq.png
+	7.make successfully at 2009-04-29 09:55!
+	8.run successfully!
+	9.finished my own command line interface....
+r5
+	
 r4
 	add function:auto show verify picture
 	add ChangeLog

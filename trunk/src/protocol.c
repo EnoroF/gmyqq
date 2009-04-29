@@ -52,7 +52,7 @@ int post_packet( struct qqclient* qq, qqpacket* p, int key_type )
 		}
 		case RANDOM_KEY:
 		{
-			NEW( encrypted, PACKET_SIZE );
+			NEW( encrypted, PACKET_SIZE ,uchar);
 			if( !encrypted ) {
 				DBG("Error: encrypted not allocated.");
 				return -1;
@@ -84,7 +84,7 @@ int post_packet( struct qqclient* qq, qqpacket* p, int key_type )
 		}
 		case SESSION_KEY:
 		{
-			NEW( encrypted, PACKET_SIZE );
+			NEW( encrypted, PACKET_SIZE ,uchar);
 			if( !encrypted ) {
 				DBG("Error: encrypted not allocated.");
 				return -2;
@@ -123,7 +123,7 @@ static int decrypt_with_key( qqclient* qq, qqpacket* p, bytebuffer* buf, uchar* 
 	int out_len = PACKET_SIZE;
 	int head_len = qq->network==TCP ? 9 : 7;
 	uchar* decrypted;
-	NEW( decrypted, PACKET_SIZE );
+	NEW( decrypted, PACKET_SIZE ,uchar);
 	if( !decrypted ) {
 		DBG("Error: decrypted not allocated.");
 		return -1;

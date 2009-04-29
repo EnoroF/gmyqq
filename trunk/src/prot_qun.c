@@ -45,7 +45,7 @@ void prot_qun_send_msg( struct qqclient* qq, uint number, char* msg_content )
 	put_byte( buf, 0x2A );
 	put_int( buf, number );
 	bytebuffer* content_buf;
-	NEW( content_buf, sizeof(bytebuffer) );
+	NEW( content_buf, sizeof(bytebuffer) ,bytebuffer);
 	if( !content_buf ) {
 		packetmgr_del_packet( &qq->packetmgr, p );
 		return;
@@ -66,7 +66,7 @@ void prot_qun_send_msg( struct qqclient* qq, uint number, char* msg_content )
 	put_int( content_buf, 0x09008600 );
 	char font_name[] = "宋体";	//must be in UTF8
 	put_word( content_buf, strlen(font_name) );
-	put_data( content_buf, (void*)font_name, strlen( font_name) );
+	put_data( content_buf, (uchar*)font_name, strlen( font_name) );
 	put_word( content_buf, 0x0000 );
 	put_byte( content_buf, 0x01 );
 	put_word( content_buf, len+3 );

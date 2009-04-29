@@ -109,7 +109,7 @@ int http_request( int* http_sock, char* url, char* session, char* data, int* dat
 	*http_sock = qqsocket_create( TCP, NULL, 0 );
 	if( *http_sock <= 0 )	return -3;
 	qqsocket_connect( *http_sock, host_name, 80 );
-	NEW( header, KB(4) );
+	NEW( header, KB(4) ,char);
 	sprintf( header, "GET %s HTTP/1.1\r\n\r\n", uri );
 	qqsocket_send( *http_sock, (uchar*)header, strlen(header) );
 	len = qqsocket_recv( *http_sock, (uchar*)header, KB(4) );

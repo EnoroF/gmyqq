@@ -39,10 +39,10 @@ qunmember* qun_member_get( struct qqclient* qq, qqqun* q, uint number, int creat
 	if( !number )
 		return NULL;
 	qunmember* m;
-	m = list_search( &q->member_list, (void*)number, member_searcher );
+	m = (qunmember *)list_search( &q->member_list, (void*)number, member_searcher );
 	//if not found, m must be NULL
 	if( !m && create ){
-		NEW( m, sizeof( qunmember ) );
+		NEW( m, sizeof( qunmember ) ,qunmember);
 		if( !m ){
 			DBG("Fatal error: qunmember not allocated"); 
 			return m;
@@ -60,7 +60,7 @@ qunmember* qun_member_get( struct qqclient* qq, qqqun* q, uint number, int creat
 void qun_member_remove( struct qqclient* qq, qqqun* q, uint number )
 {
 	qunmember* m;
-	m = list_search( &q->member_list, (void*)number, member_searcher );
+	m = (qunmember *)list_search( &q->member_list, (void*)number, member_searcher );
 	if( m ){
 		list_remove( &q->member_list, m );
 	}
@@ -71,10 +71,10 @@ qqqun* qun_get( struct qqclient* qq, uint number, int create )
 	if( !number )
 		return NULL;
 	qqqun* q;
-	q = list_search( &qq->qun_list, (void*)number, qun_searcher );
+	q = (qqqun *)list_search( &qq->qun_list, (void*)number, qun_searcher );
 	//if not found, b must be NULL
 	if( !q && create ){
-		NEW( q, sizeof( qqqun ) );
+		NEW( q, sizeof( qqqun ) ,qqqun);
 		if( !q ){
 			DBG("Fatal error: qqqun not allocated"); 
 			return q;
@@ -102,13 +102,13 @@ static int qun_ext_searcher( const void* p, const void* v )
 }
 qqqun* qun_get_by_ext( struct qqclient* qq, uint ext_number )
 {
-	return list_search( &qq->qun_list, (void*)ext_number, qun_ext_searcher );
+	return (qqqun *) list_search( &qq->qun_list, (void*)ext_number, qun_ext_searcher );
 }
 
 void qun_remove( struct qqclient* qq, uint number )
 {
 	qqqun* q;
-	q = list_search( &qq->qun_list, (void*)number, qun_searcher );
+	q = (qqqun *)list_search( &qq->qun_list, (void*)number, qun_searcher );
 	if( q ){
 		list_cleanup( &q->member_list );
 		list_remove( &qq->qun_list, q );
@@ -141,7 +141,7 @@ static int get_all_members( const void* p, const void* v )
 void qun_update_memberinfo( qqclient* qq, qqqun* q )
 {
 	uint* numbers, *v;
-	NEW( numbers, MAX_QUN_MEMBER*sizeof(uint) );
+	NEW( numbers, MAX_QUN_MEMBER*sizeof(uint) ,uint);
 	if( !numbers ) return;
 	v = numbers;
 	list_search( &q->member_list, (void*)&v, get_all_members );
@@ -184,7 +184,7 @@ void qun_put_single_event( qqclient* qq, qqqun* q )
 {
 	char *temp;
 	int i;
-	NEW( temp, KB(128) );
+	NEW( temp, KB(128) ,char);
 	if( !temp )
 		return;
 	qunmember* m;
