@@ -196,7 +196,10 @@ void config_close( config* c )
 config *g_conf;
 void config_init()
 {
-	NEW( g_conf, sizeof(config) );
+	//NEW( g_conf, sizeof(config) );
+    static config g_conf_tmp[sizeof(config)];
+    memset(g_conf_tmp,0,sizeof(config));
+    g_conf = g_conf_tmp;
 	if( !g_conf ) return;
 	if( config_open( g_conf, "./qqconfig.txt" ) < 0 ){
 		perror("can't not open qqconfig.txt file.");

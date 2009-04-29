@@ -21,7 +21,8 @@ typedef struct mem_detail{
 }mem_detail;
 
 
-#define NEW( p, size ) { p = malloc(size); memset( p, 0, size ); }
+//#define NEW( p, size ) { p = malloc(size); memset( p, 0, size ); }
+#define NEW( p, size ,type) { p =(type*) malloc(size); memset( p, 0, size ); }
 #define DEL( p ) { free((void*)p); p = NULL; }
 
 //

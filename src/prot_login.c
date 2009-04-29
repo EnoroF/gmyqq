@@ -170,7 +170,7 @@ void prot_login_request_reply( struct qqclient* qq, qqpacket* p )
 		int len;
 		len = get_word( buf );
 		uchar* data;
-		NEW( data, len );
+		NEW( data, len ,uchar);
 		if( !data )
 			return;
 		get_data( buf, data, len );
@@ -215,7 +215,7 @@ void prot_login_verify( struct qqclient* qq )
 	if( !p ) return;
 	bytebuffer *buf = p->buf;
 	bytebuffer *verify_data;
-	NEW( verify_data, sizeof(bytebuffer) );
+	NEW( verify_data, sizeof(bytebuffer) ,bytebuffer);
 	if( !verify_data ) {
 		packetmgr_del_packet( &qq->packetmgr, p );
 		return;
@@ -338,7 +338,7 @@ void prot_login_get_info_reply( struct qqclient* qq, qqpacket* p )
 	get_token( buf, &qq->data.login_info_large );
 	get_int( buf );	//????
 	uchar len = get_byte( buf );
-	get_data( buf, (void*)qq->self->nickname, len );
+	get_data( buf, (uchar*)qq->self->nickname, len );
 	qq->self->nickname[len] = 0;
 	DBG("Hello, %s", qq->self->nickname );
 	//2009-1-26 19:04 Huang Guan: for getting the whole list

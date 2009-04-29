@@ -72,7 +72,7 @@ void prot_im_send_msg( struct qqclient* qq, uint to, char* msg )
 	put_int( buf, 0x09008600 );
 	char font_name[] = "宋体";	//must be UTF8
 	put_word( buf, strlen(font_name) );
-	put_data( buf, (void*)font_name, strlen( font_name) );
+	put_data( buf, (uchar*)font_name, strlen( font_name) );
 	put_word( buf, 0x0000 );
 	put_byte( buf, 0x01 );
 	put_word( buf, len+3 );
@@ -114,7 +114,7 @@ static void parse_message_09( qqpacket* p, qqmessage* msg, char* tmp, int outlen
 		case 01:	//pure text
 			len_str = get_word( buf );
 			len_str = MIN(len_str, outlen-i);
-			get_data( buf, (void*)&tmp[i], len_str );
+			get_data( buf, (uchar*)&tmp[i], len_str );
 			i += len_str;
 			break;
 		case 02:	//face
@@ -327,7 +327,7 @@ void prot_im_recv_msg( struct qqclient* qq, qqpacket* p )
 		DBG("Early message ... Abandoned.");
 		return;
 	}
-	NEW( msg, sizeof( qqmessage ) );
+	NEW( msg, sizeof( qqmessage ) ,qqmessage);
 	if( !msg )
 		return;
 	//

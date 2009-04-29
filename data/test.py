@@ -9,7 +9,7 @@ class MainWindow():
     def __init__(self):
         self.gladefile="gmyqq.glade"
         self.xml=gtk.glade.XML(self.gladefile)
-        self.window = self.xml.get_widget("window_main")
+        self.window = self.xml.get_widget("main_window")
 
         self.window.set_title("gmyqq")
         self.window.set_default_size(800, 600)

@@ -39,7 +39,7 @@ void prot_user_keep_alive( struct qqclient* qq )
 	bytebuffer *buf = p->buf;
 	char num_str[16];
 	sprintf( num_str, "%d", qq->number );
-	put_data( buf, (void*)num_str, strlen(num_str) );
+	put_data( buf, (uchar*)num_str, strlen(num_str) );
 	post_packet( qq, p, SESSION_KEY );
 }
 
@@ -205,7 +205,7 @@ void prot_user_get_notice_reply( struct qqclient* qq, qqpacket* p )
 		{
 			ushort len = get_word( buf );
 			char* str;
-			NEW( str, len+1 );
+			NEW( str, len+1 ,char);
 			if( !str )
 				return;
 			get_data( buf, (uchar*)str, len );
@@ -237,7 +237,7 @@ void prot_user_check_ip_reply( struct qqclient* qq, qqpacket* p )
 	bytebuffer *buf = p->buf;
 	ushort len;
 	char* str, *t;
-	NEW( str, buf->len );
+	NEW( str, buf->len ,char);
 	if( !str )	return;
 	t = str;
 	if( get_byte( buf ) != 2 ){
@@ -370,9 +370,9 @@ void prot_user_request_token_reply( struct qqclient* qq, qqpacket* p )
 			puts("Verifying code is incorrect!");
 			return;	//verify code wrong.
 		}
-		NEW( data, datalen );
-		NEW( url, 128 );
-		NEW( session, 128 );
+		NEW( data, datalen ,char);
+		NEW( url, 128 ,char);
+		NEW( session, 128 ,char);
 		int len, ret;
 		len = get_word( buf );
 		if( len >= 128 ){

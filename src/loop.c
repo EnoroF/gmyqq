@@ -26,7 +26,7 @@ int loop_create( loop* l, int size, loop_delete_func del )
 	l->head = l->tail = 0;
 	l->del_func = del;
 	pthread_mutex_init( &l->mutex, NULL );
-	l->items = malloc( l->size*sizeof(void*) );
+	l->items = (void **)malloc( l->size*sizeof(void*) );
 	assert( l->items != NULL );
 	return 0;
 }

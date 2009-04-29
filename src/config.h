@@ -16,10 +16,11 @@ typedef struct cconfig{
 	config_item *items[1024];
 }config;
 
-int config_open( config* c, char* filename );
-int config_readint( config*c, char* name );
-char* config_readstr( config*c, char* name );
-void config_close( config* c );
+//amobline:add const to argument 2
+//int config_open( config* c, const char* filename );
+//int config_readint( config*c, const char* name );
+//char* config_readstr( config*c, const char* name );
+//void config_close( config* c );
 
 //
 void config_init();
