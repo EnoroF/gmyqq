@@ -169,7 +169,7 @@ int config_readint( config*c, char* name )
 	return 0;
 }
 
-char* config_readstr( config*c, char* name )
+char* config_readstr( config*c, const char* name )
 {
 	int i;
 	for( i=0; i<c->item_count; i++ )

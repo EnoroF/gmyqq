@@ -25,6 +25,7 @@ OBJS:=$(addprefix $(OBJ)/, $(OBJS))
 SRCS:=$(addprefix $(SRC)/,$(OBJS))
 
 all: $(EXEC)
+	cp $(DATA)/qqconfig.txt $(BIN)/
 	@echo done.
 
 $(EXEC): $(OBJS)

@@ -3,3 +3,9 @@
 ---------amoblin 2009-04-23
 
 若不能运行，先复制data目录下qqconfig.txt到bin下。	--amoblin	2009-04-28
+
+makefile 中自动复制data下qqconfig.txt到bin了。	--amoblin	2009-05-01
+
+使用方法：
+make
+make runc
