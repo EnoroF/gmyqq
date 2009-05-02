@@ -79,7 +79,7 @@ void prot_login_touch_with_info( struct qqclient* qq, uchar* server_data, uchar 
 	bytebuffer *buf = p->buf;
 	restore_version_data( qq );
 	randkey( p->key );
-	memcpy( qq->data.server_data, server_data, MIN(len,sizeof(qq->data.server_data)) );
+	memcpy( qq->data.server_data, server_data, MIN_(len,sizeof(qq->data.server_data)) );
 	put_word( buf, 1 );
 	put_data( buf, qq->data.locale, sizeof(qq->data.locale) );
 	put_data( buf, qq->data.version_spec, sizeof(qq->data.version_spec) );

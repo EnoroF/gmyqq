@@ -113,7 +113,7 @@ static void parse_message_09( qqpacket* p, qqmessage* msg, char* tmp, int outlen
 		switch( type ){
 		case 01:	//pure text
 			len_str = get_word( buf );
-			len_str = MIN(len_str, outlen-i);
+			len_str = MIN_(len_str, outlen-i);
 			get_data( buf, (uchar*)&tmp[i], len_str );
 			i += len_str;
 			break;

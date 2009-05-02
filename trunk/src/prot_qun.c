@@ -138,7 +138,7 @@ static void parse_quninfo( struct qqclient* qq, qqpacket* p, qqqun* q )
 		buf->pos += 9;
 		//name
 		uchar len = get_byte( buf );
-		len = MIN( NICKNAME_LEN-1, len );
+		len = MIN_( NICKNAME_LEN-1, len );
 		get_data( buf,  (uchar*)q->name, len );
 		q->name[len] = 0;
 	//	DBG("qun: %s", q->name );
@@ -193,7 +193,7 @@ static void parse_memberinfo( struct qqclient* qq, qqpacket* p, qqqun* q )
 		m->age = get_byte( buf );
 		m->sex = get_byte( buf );
 		uchar name_len = get_byte( buf );
-		name_len = MIN( NICKNAME_LEN-1, name_len );
+		name_len = MIN_( NICKNAME_LEN-1, name_len );
 		get_data( buf,  (uchar*)m->nickname, name_len );
 		m->nickname[name_len] = 0;
 		//TX技术改革不彻底，还保留使用GB码 2009-1-25 11:02
@@ -233,7 +233,7 @@ static void parse_membername( struct qqclient* qq, qqpacket* p, qqqun* q )
 			break;
 		}
 		uchar name_len = get_byte( buf );
-		name_len = MIN( NICKNAME_LEN-1, name_len );
+		name_len = MIN_( NICKNAME_LEN-1, name_len );
 		get_data( buf,  (uchar*)m->nickname, name_len );
 		m->nickname[name_len] = 0;
 	}

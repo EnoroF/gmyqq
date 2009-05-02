@@ -81,8 +81,8 @@ static void read_config( qqclient* qq )
 	if( !tcp_server_count && !udp_server_count ){
         //const char* tcps, *udps;
 		char* tcps, *udps;      //---amoblin:把字符串从函数参数里调出，赋给数组再用。
-		tcps = config_readstr( g_conf, "QQTcpServerList");
-		udps = config_readstr( g_conf, "QQUdpServerList");
+		tcps =(char *) config_readstr( g_conf, "QQTcpServerList");
+		udps =(char *) config_readstr( g_conf, "QQUdpServerList");
 		if( tcps ){
 			read_server_addr( tcp_servers, tcps, &tcp_server_count );
 		}
@@ -91,12 +91,12 @@ static void read_config( qqclient* qq )
 		}
 	}
 	qq->log_packet = config_readint( g_conf, "QQPacketLog");
-	if( config_readstr( g_conf, "QQNetwork") && stricmp( config_readstr( g_conf, "QQNetwork"), "TCP" ) == 0 )
+	if( config_readstr( g_conf, "QQNetwork") && stricmp( (char *)config_readstr( g_conf, "QQNetwork"), "TCP" ) == 0 )
 		qq->network = TCP;
 	else
 		qq->network = UDP;
 	if( config_readstr( g_conf, "QQVerifyDir" ) )
-		strncpy( qq->verify_dir, config_readstr( g_conf, "QQVerifyDir" ), PATH_LEN );
+		strncpy( qq->verify_dir, (char *)config_readstr( g_conf, "QQVerifyDir" ), PATH_LEN );
 	if( qq->verify_dir == NULL )
 		strcpy( qq->verify_dir, "./web/verify" );
 	mkdir_recursive( qq->verify_dir );
