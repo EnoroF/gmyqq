@@ -45,7 +45,7 @@ void prot_misc_broadcast( struct qqclient* qq, qqpacket* p )
 	memset( e, 0, sizeof(e) );
 	for( i=0, s=0, j=0; i<=len && j<4; i++ ){
 		if( str[i] == 0x1f || i==len ){
-			memcpy( e[j], &str[s], MIN(i-s, 255) );
+			memcpy( e[j], &str[s], MIN_(i-s, 255) );
 			j++;
 			s = i+1;
 		}

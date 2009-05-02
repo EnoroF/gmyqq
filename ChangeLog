@@ -1,3 +1,14 @@
+r7
+	2009年05月01日 星期五 16时40分08秒
+	modify qqclient.c.
+	implement commands:status,t,a,s.
+	modify myqq() in platform's adjust.
+	2009年05月01日 星期五 17时33分35秒
+	include curses.h in gmyqq.h,but error found!
+	以上是在火车上写的。。。
+	auto show verify picture.
+	implement text UI with curses.
+	add config file in ~/.gmyqq/gmyqqrc.xml and implement auto login.
 r6
 	1.upload a bzip file.
 	2.modify TODO

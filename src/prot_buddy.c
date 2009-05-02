@@ -155,7 +155,7 @@ void prot_buddy_update_signiture( struct qqclient* qq, uint pos )
 	for( i=0; i<qq->buddy_list.count; i++ )
 		if( ((qqbuddy*)qq->buddy_list.items[i])->number >= pos )
 			break;
-	count = MIN( 50, qq->buddy_list.count-i );
+	count = MIN_( 50, qq->buddy_list.count-i );
 	if( count == 0 ){
 		pthread_mutex_unlock( &qq->buddy_list.mutex );
 		DBG("signiture finished.");
@@ -227,7 +227,7 @@ void prot_buddy_update_account( struct qqclient* qq, uint pos )
 	for( i=0; i<qq->buddy_list.count; i++ )
 		if( ((qqbuddy*)qq->buddy_list.items[i])->number >= pos )
 			break;
-	count = MIN( 50, qq->buddy_list.count-i );
+	count = MIN_( 50, qq->buddy_list.count-i );
 	if( count == 0 ){
 		pthread_mutex_unlock( &qq->buddy_list.mutex );
 		DBG("account finished.");
@@ -269,7 +269,7 @@ void prot_buddy_update_account_reply( struct qqclient* qq, qqpacket* p )
 				b->account_flag = get_int( buf );
 				if( b->account_flag > 0 ){
 					uchar len = get_byte( buf );
-					len = MIN( len, ACCOUNT_LEN-1 );
+					len = MIN_( len, ACCOUNT_LEN-1 );
 					get_data( buf,  (uchar*)b->account, len );
 					b->account[len] = 0;
 			//		DBG("account: %s  %s", b->nickname, b->account );
@@ -330,7 +330,7 @@ void prot_buddy_update_alias_reply( struct qqclient* qq, qqpacket* p )
 					return;
 				}
 				uchar len = get_byte( buf );
-				len = MIN( len, ALIAS_LEN-1 );
+				len = MIN_( len, ALIAS_LEN-1 );
 				get_data( buf,  (uchar*)b->alias, len );
 				b->alias[len] = 0;
 			//	DBG("alias: %s  %s", b->nickname, b->alias );

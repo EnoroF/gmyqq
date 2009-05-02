@@ -9,7 +9,7 @@ typedef unsigned short ushort;
 typedef unsigned char uchar;
 
 
-#define MIN(a,b)(a>b?b:a )
+#define MIN_(a,b)(a>b?b:a )
 #define KB(a) a*1024
 #define MB(a) a*KB(1024)
 #define CN_TIME(a) a
