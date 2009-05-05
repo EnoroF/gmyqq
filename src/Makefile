@@ -1,5 +1,5 @@
 # Makefile for MyQQ
-MyQQ_HOME=..
+MyQQ_HOME=.
 SRC=$(MyQQ_HOME)/src
 BIN=$(MyQQ_HOME)/bin
 OBJ=$(MyQQ_HOME)/obj
@@ -12,7 +12,7 @@ CC=	g++
 # Use for compile.
 CFLAGS = `pkg-config --cflags dbus-glib-1 libglademm-2.4 gtkmm-2.4 libnotifymm-1.0 libnm_glib`
 # Use for link.
-CLIBS  = `pkg-config --libs dbus-glib-1 gtkmm-2.4 libglademm-2.4 libnotifymm-1.0 libnm_glib` -lpthread -lcurses -s
+CLIBS  = `pkg-config --libs dbus-glib-1 gtkmm-2.4 libglademm-2.4 libnotifymm-1.0 libnm_glib` -lpthread -lncursesw -lpanel -s
 
 OBJS=qqsocket.o qqcrypt.o md5.o debug.o qqclient.o memory.o config.o packetmgr.o qqpacket.o \
 	prot_login.o protocol.o prot_misc.o prot_im.o prot_user.o list.o buddy.o group.o qun.o \
@@ -26,7 +26,6 @@ OBJS:=$(addprefix $(OBJ)/, $(OBJS))
 SRCS:=$(addprefix $(SRC)/,$(OBJS))
 
 all: $(EXEC)
-	cp $(DATA)/qqconfig.txt $(BIN)/
 	@echo done.
 
 $(EXEC): $(OBJS)
@@ -50,6 +49,10 @@ runc:
 	(cd $(BIN);./gmyqq --nogui)
 runt:
 	(cd $(BIN);./gmyqq --test)
+runt1:
+	(cd $(BIN);./gmyqq --test -u 1140048821)
+runt2:
+	(cd $(BIN);./gmyqq --test -u 1147071944)
 update:
 	@echo update.
 install:

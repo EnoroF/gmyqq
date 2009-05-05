@@ -433,7 +433,8 @@ void prot_buddy_verify_addbuddy_reply( struct qqclient* qq, qqpacket* p )
 	uchar cmd = get_byte( buf );
 	uint number;
 	number = get_int( buf );
-	switch( cmd ){
+	switch( cmd )
+    {
 	case 0x02:
 		break;	//wait for reply..
 	case 0x00:
@@ -442,14 +443,17 @@ void prot_buddy_verify_addbuddy_reply( struct qqclient* qq, qqpacket* p )
 	case 0x01:
 		{
 			uchar result = get_byte( buf );
-			if( result == 0x00 ){
+			if( result == 0x00 )
+            {
 				char msg[128];
 				DBG("add buddy %u ok!! [cmd=%x]", number, cmd );
 				sprintf( msg, "你已经把[%u]添加为好友。", number );
 				buddy_msg_callback( qq, 100, time(NULL), msg );
 				//refresh buddylist
 				buddy_update_list( qq );
-			}else{
+			}
+            else
+            {
 				DBG("failed to add buddy %u  result=%d", number, result );
 			}
 		}

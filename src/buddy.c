@@ -48,12 +48,14 @@ qqbuddy* buddy_get( qqclient* qq, uint number, int create )
 	qqbuddy* b;
 	b = (qqbuddy *)list_search( &qq->buddy_list, (void*)number, searcher );
 	//if not found, b must be NULL
-	if( b==NULL && create ){
+	if( b==NULL && create )
+    {
 		NEW( b, sizeof( qqbuddy ) ,qqbuddy);
 		if( !b ) return b;
 		b->number = number;
 		sprintf( b->nickname, "%u", number );
-		if( list_append( &qq->buddy_list, (void*)b )<0 ){
+		if( list_append( &qq->buddy_list, (void*)b )<0 )
+        {
 			DEL( b );
 		}
 	}

@@ -1,3 +1,7 @@
+r8
+	用ncurses代替curses，实现中文输出
+	实现ls，lg，la的ncurses窗口显示。05-05 00:41
+	用ncurses代替原来界面！
 r7
 	2009年05月01日 星期五 16时40分08秒
 	modify qqclient.c.

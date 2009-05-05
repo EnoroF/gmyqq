@@ -83,7 +83,10 @@ void utf8_to_gb( char* src, char* dst, int len )
 	if ( cd != (iconv_t)-1 ){
 		ret = iconv( cd, &inbuf, &inlen, &outbuf, &outlen );
 		if( ret != 0 )
-			printf("iconv failed err: %s\n", strerror(errno) );
+        {
+            //amoblin   this do exist!
+            //printf("iconv failed err: %s\n", strerror(errno) );
+        }
 		iconv_close( cd );
 	}
 }
@@ -99,7 +102,10 @@ void gb_to_utf8( char* src, char* dst, int len )
 	if ( cd != (iconv_t)-1 ){
 		ret = iconv( cd, &inbuf, &inlen, &outbuf, &outlen );
 		if( ret != 0 )
-			printf("iconv failed err: %s\n", strerror(errno) );
+        {
+            //amoblin
+            //printf("iconv failed err: %s\n", strerror(errno) );
+        }
 		iconv_close( cd );
 	}
 }

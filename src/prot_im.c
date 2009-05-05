@@ -37,11 +37,11 @@
 #include "utf8.h"
 #include "util.h"
 
-
 void prot_im_send_msg( struct qqclient* qq, uint to, char* msg )
 {
 	int len = strlen( msg );
-	if( len > 700 ){ //分片功能未做，没时间.
+	if( len > 700 )
+    { //分片功能未做，没时间.
 		return ;
 	}
 //	DBG("str: %s  len: %d", msg, len );
@@ -105,12 +105,14 @@ static void parse_message_09( qqpacket* p, qqmessage* msg, char* tmp, int outlen
 	len = get_word( buf );	//pass font name
 	buf->pos += len;
 	get_word( buf );	//00 00 2009-2-7 Huang Guan, updated
-	while( buf->pos < buf->len ){
+	while( buf->pos < buf->len )
+    {
 		uchar type = get_byte(buf);
 		len = get_word(buf);
 		get_byte(buf);	//is 01 if text or face, 02 if image
 		ushort len_str;
-		switch( type ){
+		switch( type )
+        {
 		case 01:	//pure text
 			len_str = get_word( buf );
 			len_str = MIN_(len_str, outlen-i);
@@ -122,11 +124,14 @@ static void parse_message_09( qqpacket* p, qqmessage* msg, char* tmp, int outlen
 			buf->pos += len_str;	//
 			get_byte( buf );	//FF
 			len_str = get_word( buf );
-			if( len_str == 2 ){
+			if( len_str == 2 )
+            {
 				get_byte( buf );
 				if( outlen-i > 15 )
 					i += sprintf( &tmp[i], "[face:%d]", get_byte( buf ) );
-			}else{ //unknown situation
+			}
+            else
+            { //unknown situation
 				buf->pos += len_str;
 			}
 			break;
@@ -176,7 +181,8 @@ static void process_buddy_im_text( struct qqclient* qq, qqpacket* p, qqmessage* 
 	}
 //	DBG("buddy msg from %u:", msg->from );
 //	puts( msg->msg_content );
-	if( qq->auto_reply[0]!='\0' ){ //
+	if( qq->auto_reply[0]!='\0' )
+    { //
 		prot_im_send_msg( qq, msg->from, qq->auto_reply );
 	}
 	buddy_msg_callback( qq, msg->from, msg->msg_time, msg->msg_content );
@@ -187,7 +193,8 @@ static void process_buddy_im( struct qqclient* qq, qqpacket* p, qqmessage* msg )
 	bytebuffer *buf = p->buf;
 	get_word( buf );	//version
 	msg->from = get_int( buf );
-	if( get_int( buf ) != qq->number ){
+	if( get_int( buf ) != qq->number )
+    {
 		DBG("nothing but this is impossible!!");
 	}
 	//to check if this buddy is in our list, or we add it.
@@ -196,7 +203,8 @@ static void process_buddy_im( struct qqclient* qq, qqpacket* p, qqmessage* msg )
 	uchar key[16];
 	get_data( buf, key, 16 );
 	ushort content_type = get_word( buf );
-	switch( content_type ){
+	switch( content_type )
+    {
 	case QQ_NORMAL_IM_TEXT:
 	//	DBG("QQ_NORMAL_IM_TEXT");
 		process_buddy_im_text( qq, p, msg );
@@ -256,9 +264,12 @@ static void process_sys_im( struct qqclient* qq, qqpacket* p, qqmessage* msg )
 	get_data( buf, (uchar*)msg->msg_content, len );
 	msg->msg_content[len] = 0;
 	buddy_msg_callback( qq, msg->from, msg->msg_time, msg->msg_content );
-	if( strstr( msg->msg_content, "另一地点登录" ) != NULL ){
+	if( strstr( msg->msg_content, "另一地点登录" ) != NULL )
+    {
 		qqclient_set_process( qq, P_BUSY );
-	}else{
+	}
+    else
+    {
 		qqclient_set_process( qq, P_ERROR );
 	}
 //	DBG("sysim(type:%x): %s", content_type, msg->msg_content );
@@ -314,7 +325,6 @@ static void process_qun_member_im( struct qqclient* qq, qqpacket* p, qqmessage* 
 	process_buddy_im( qq, p, msg );
 	DBG("process_qun_member_im: qun_number: %u", msg->qun_number );
 }
-
 
 void prot_im_recv_msg( struct qqclient* qq, qqpacket* p )
 {
@@ -409,4 +419,3 @@ void prot_im_recv_msg( struct qqclient* qq, qqpacket* p )
 	prot_im_ack_recv( qq, p );
 	DEL( msg );
 }
-

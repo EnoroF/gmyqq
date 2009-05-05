@@ -12,7 +12,8 @@
 #include "protocol.h"
 
 //login process
-enum LOGIN_PROCESS{
+enum LOGIN_PROCESS
+{
 	P_INIT = 0,
 	P_LOGGING,
 	P_VERIFYING,
@@ -23,13 +24,14 @@ enum LOGIN_PROCESS{
 	P_BUSY
 };
 
-
-typedef struct server_item{
+typedef struct server_item
+{
 	char	ip[32];
 	ushort	port;
 }server_item;
 
-typedef struct qqclient{
+typedef struct qqclient
+{
 	uint		number;
 	ushort		version;
 	ushort		seqno;
@@ -72,11 +74,11 @@ typedef struct qqclient{
 	char		auto_accept;	//accept addbuddy requests
 	char		auto_reply[AUTO_REPLY_LEN];
 	int			http_sock;
-	union{
+	union
+    {
 		struct qqdata_2009	data;
 	};
 }qqclient;
-
 
 int connect_server( qqclient* qq );
 int qqclient_create( qqclient* qq, uint num, char* pass ); 

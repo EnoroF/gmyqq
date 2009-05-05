@@ -8,8 +8,7 @@
 //#define RELEASE
 
 #ifndef RELEASE
-#define DBG(args ...) \
-	print_error( __FILE__, (char*)__func__, __LINE__, ##args )
+#define DBG(args ...) print_error( __FILE__, (char*)__func__, __LINE__, ##args )
 #else
 #define DBG(args ...) 
 //#define DBG printf
