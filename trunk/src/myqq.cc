@@ -19,6 +19,8 @@ int read_password(char *lineptr)
 	return   nread;   
 }
 #endif
+
+Irssi *irssi;
 /*
 void buddy_msg_callback ( qqclient* qq, uint uid, time_t t, char* msg )
 {
@@ -198,19 +200,6 @@ Myqq::Myqq(int argc,char **argv)
        */
 
     parse_command_line(argc, argv);
-    /*
-    else    //network error!    just for developing
-    {
-        curses_init();
-        while(true)
-        {
-            char command[256];
-            char *temp=command;
-            get_command(temp);    //得到命令
-        }
-        endwin();
-    }
-    */
 }
 void Myqq::parse_command_line(int argc,char **argv)
 {
@@ -245,7 +234,7 @@ bool Myqq::login()
         cout<<"QQ账号：";
         cin>>account;
     }
-    if(*password == NULL)
+    if(*password == NULL||!strcmp(password,"0"))
     {
         cout<<"QQ密码：";
 #ifdef __WIN32__
@@ -335,31 +324,26 @@ bool Myqq::authen()
     else
         return true;
 }
-void Myqq::welcome_message()
-{
-    cout<<"欢迎使用 MyQQ2009 beta1 中文版\n"
-        <<"这是一个为程序员和电脑爱好者制作的"
-        <<"迷你控制台即时通讯软件,享受它吧!\n"
-        <<"help:      显示帮助信息.\n"
-        ;
-}
 void Myqq::help()
 {
-    irssi->show("add/a:     添加好友. add+QQ号码.\n\
-            la:        list all:所有好(群)友列表.(指向前操作)\n\
-            ls:        list buddies:在线好(群)友列表.(指向前操作)\n\
-            lg:        list group:显示群列表.(指向前操作)\n\
-            to/t:      指向某个QQ号或者前面的编号.\n\
+    irssi->show("这是模仿irssi做的QQ图形界面。相信熟悉irssi的都知道：前有'/'的为命令，没有'/'的话直接当做消息发出。下面列出现在实现的命令:\n\
+            /a QQ:     添加好友QQ.\n\
+            /la:       list all:所有好(群)友列表.\n\
+            /ls:       list buddies:非隐身好(群)友列表.\n\
+            /lg:       list group:显示群列表.\n\
+            /t N:      准备和编号为N的好友对话.\n\
             enter/e:   指向某个群号或者前面的编号.\n\
             leave/l:   离开群.(指向后操作)\n\
-            say/s:     发送信息.(指向后操作)\n\
             info/i:    查看相应信息.(指向后操作)\n\
             update/u:  更新所有列表.\n\
             status:    改变状态(online|away|busy|killme|hidden)\n\
             verify/r:  输入验证码(验证码在verify目录下).\n\
             change/c:  更换用户登陆.\n\
-            exit/quit: 退出.\n\
-            h:         help:显示帮助信息.\n");
+            /exit      退出.\n\
+            /quit:     退出.\n\
+            /h:        help:显示帮助信息.\n\
+            /help:     help:显示帮助信息.\n\
+    第一次使用会生成~/.gmyqq/gmyqqrx.xml配置文件，修改此文件可实现自动登录。\n");
 }
 void Myqq::get_command(char *command)
 {
@@ -534,7 +518,7 @@ void Myqq::change_status()
 void Myqq::add_buddy(char *arg)
 {
     irssi->show("添加：");
-    qqclient_add( qq, atoi(arg), "");
+    qqclient_add( qq, atoi(arg), "nothing");
 }
 void Myqq::logout()
 {
@@ -591,7 +575,9 @@ bool Myqq::init()
 
     static char file[20];
     strcpy(file,getenv("HOME"));
-    strcat(file,"/.gmyqq/gmyqqrc.xml");
+    strcat(file,"/.gmyqq");
+    mkdir(file,0777);
+    strcat(file,"/gmyqqrc.xml");
     config_file = file;
 
     int cmdid, lastcmd=-1, len;

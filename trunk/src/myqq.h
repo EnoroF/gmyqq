@@ -41,6 +41,7 @@
 #include <panel.h>
 #include <string>
 #include <time.h>
+#include <sys/stat.h>
 #endif
 
 extern "C"
@@ -641,5 +642,3 @@ class Myqq
         WINDOW *qq_window[4];
         uint buddy_number;
 };
-
-Irssi *irssi;

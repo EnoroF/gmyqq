@@ -1,5 +1,5 @@
 # Makefile for MyQQ
-MyQQ_HOME=.
+MyQQ_HOME=..
 SRC=$(MyQQ_HOME)/src
 BIN=$(MyQQ_HOME)/bin
 OBJ=$(MyQQ_HOME)/obj
