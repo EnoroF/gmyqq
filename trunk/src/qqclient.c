@@ -153,38 +153,47 @@ int qqclient_md5_create( qqclient* qq, uint num, uchar* md5_pass )
 #define INTERVAL 5
 static void* qqclient_keepalive( void* data )
 {
-	qqclient* qq = (qqclient*) data;
-	int counter = 0;
-	DBG("keepalive");
-	while( qq->process != P_INIT ){
-		counter ++;
-		if( counter % INTERVAL == 0 ){
-			if( qq->process == P_LOGGING || qq->process == P_LOGIN ){
-				packetmgr_check_packet( qq, 5 );
-				if( qq->process == P_LOGIN ){
-					//1次心跳/分钟
-					if( counter % ( 1 *60*INTERVAL) == 0 ){
-						prot_user_keep_alive( qq );
-					}
+    qqclient* qq = (qqclient*) data;
+    int counter = 0;
+    DBG("keepalive");
+    while( qq->process != P_INIT )
+    {
+        counter ++;
+        if( counter % INTERVAL == 0 )
+        {
+            if( qq->process == P_LOGGING || qq->process == P_LOGIN )
+            {
+                packetmgr_check_packet( qq, 5 );
+                if( qq->process == P_LOGIN )
+                {
+                    //1次心跳/分钟
+                    if( counter % ( 1 *60*INTERVAL) == 0 )
+                    {
+                        prot_user_keep_alive( qq );
+                    }
 					//10分钟刷新在线列表 QQ2009是5分钟刷新一次。
-					if( counter % ( 10 *60*INTERVAL) == 0 ){
+					if( counter % ( 10 *60*INTERVAL) == 0 )
+                    {
 						prot_buddy_update_online( qq, 0 );
 						qun_update_online_all( qq );
 					}
 					//30分钟刷新状态和刷新等级
-					if( counter % ( 30 *60*INTERVAL) == 0 ){
+					if( counter % ( 30 *60*INTERVAL) == 0 )
+                    {
 						prot_user_change_status( qq );
 						prot_user_get_level( qq );
 					}
-				//	if( qq->online_clock == 0 ){	//刚登录上了
+				//	if( qq->online_clock == 0 )
+                //	{	//刚登录上了
 				//		memcpy( last_server_info, qq->data.server_data, 15 );
 				//		last_server_ip = qq->server_ip;
 				//		last_server_port = qq->server_port;
 				//	}
 				//	//等待登录完毕
-					if( ! qq->login_finish ){
-						if( loop_is_empty(&qq->packetmgr.ready_loop) && 
-							loop_is_empty(&qq->packetmgr.sent_loop) ){
+					if( ! qq->login_finish )
+                    {
+						if(loop_is_empty(&qq->packetmgr.ready_loop)&&loop_is_empty(&qq->packetmgr.sent_loop) )
+                        {
 							qq->login_finish = 1;	//we can recv message now.
 						}
 					}
@@ -256,7 +265,8 @@ int qqclient_login( qqclient* qq )
 {
 	DBG("login");
 	int ret;
-	if( qq->process != P_INIT ){
+	if( qq->process != P_INIT )
+    {
 		DBG("please logout first");
 		return -1;
 	}
@@ -267,7 +277,8 @@ int qqclient_login( qqclient* qq )
 	packetmgr_new_seqno( qq );
 	qqclient_get_server( qq );
 	ret = connect_server( qq );
-	if( ret < 0 ){
+	if( ret < 0 )
+    {
 		qq->process = P_ERROR;
 		return ret;
 	}
