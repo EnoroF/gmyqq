@@ -1,3 +1,7 @@
+r10
+	fix configure dir..
+r9
+	new UI!
 r8
 	用ncurses代替curses，实现中文输出
 	实现ls，lg，la的ncurses窗口显示。05-05 00:41
